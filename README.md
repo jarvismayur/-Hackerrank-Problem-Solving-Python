@@ -1,6 +1,6 @@
-# HackerRank Python Solutions
+# Hackerrank Problems Solutions
 
-Welcome to the **HackerRank Python Solutions** repository! This repository contains my solutions to various problems on HackerRank, solved using Python. Each problem is organized in a way that makes it easy to find, understand, and execute the solution.
+Welcome to the **Hackerrank Problems Solutions** repository! This repository contains my solutions to various problems on HackerRank, solved using Python. Each problem is organized in a way that makes it easy to find, understand, and execute the solution.
 
 ## Table of Contents
 
