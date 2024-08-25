@@ -32,9 +32,9 @@ Hackerrank-Python-Solutions/
 │   ├── ProblemName2.py
 │   └── ...
 │
-├── Mathematics/
-│   ├── ProblemName1.py
-│   ├── ProblemName2.py
+├── SQL/
+│   ├── ProblemName1.txt
+│   ├── ProblemName2.txt
 │   └── ...
 │
 ├── README.md
