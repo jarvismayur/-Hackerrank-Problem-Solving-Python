@@ -27,7 +27,7 @@ Hackerrank-Python-Solutions/
 │   ├── ProblemName2.py
 │   └── ...
 │
-├── DataStructures/
+├── Python/
 │   ├── ProblemName1.py
 │   ├── ProblemName2.py
 │   └── ...
