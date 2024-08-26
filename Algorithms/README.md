@@ -1,8 +1,8 @@
-## Algorithm Problems
+# Algorithm Problems
 
 | Problem Name                | Problem Statement | Solution | Time Complexity | Space Complexity | Difficulty | Points |  Video Link |
 |-----------------------------|-------------------|----------|-----------------|------------------|------------|--------|------------|
-| [Solve Me First](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Solve%20Me%20First/#solve-me-first)               | [Link](https://www.hackerrank.com/challenges/solve-me-first/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Solve%20Me%20First/Solve_Me_First.py) | O(1) | O(1) | Easy | 1 |  
+| Solve Me First               | [Link](https://www.hackerrank.com/challenges/solve-me-first/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Solve%20Me%20First/Solve_Me_First.py) | O(1) | O(1) | Easy | 1 |  
 | Simple Array Sum             | [Link](https://www.hackerrank.com/challenges/simple-array-sum/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Simple%20Array%20Sum/Simple_Array_Sum.py) | O(n) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#simple-array-sum) |
 | Compare the Triplets         | [Link](https://www.hackerrank.com/challenges/compare-the-triplets/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Compare%20the%20Triplets/Compare_the_Triplets.py) | O(1) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#compare-the-triplets) |
 | A Very Big Sum               | [Link](https://www.hackerrank.com/challenges/a-very-big-sum/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/A%20Very%20Big%20Sum/A_Very_Big_Sum.py) | O(n) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#a-very-big-sum) |
@@ -12,3 +12,16 @@
 | Mini-Max Sum                 | [Link](https://www.hackerrank.com/challenges/mini-max-sum/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Mini-Max%20Sum/Mini-Max_Sum.py) | O(n) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#mini-max-sum) |
 | Birthday Cake Candles        | [Link](https://www.hackerrank.com/challenges/birthday-cake-candles/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Birthday%20Cake%20Candles/Birthday_Cake_Candles.py) | O(n) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#birthday-cake-candles) |
 | Time Conversion              | [Link](https://www.hackerrank.com/challenges/time-conversion/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Time%20Conversion/Time_Conversion.py) | O(1) | O(1) | Easy | 15 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#time-conversion) |
+
+## A Very Big Sum
+## Apple and Orange
+## Birthday Cake Candles
+## Compare the Triplets
+## Diagonal Difference
+## Grading Students
+## Mini-Max Sum
+## Plus Minus
+## Simple Array Sum
+## Solve Me First
+## Staircase
+## Time Conversion
