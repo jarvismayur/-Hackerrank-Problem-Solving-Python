@@ -5,10 +5,13 @@
 ## Alphabet Rangoli
 ## Arithmetic Operators
 ## Capitalize!
+## Check Strict Superset
+## Check Subset
 ## Designer Door Mat
 ## Find a string
 ## Find the Runner-Up Score!
 ## Finding the percentage
+## Introduction to Sets
 ## itertools.combinations()
 ## itertools.combinations_with_replacement()
 ## itertools.permutations()
@@ -68,8 +71,13 @@ My Last optimized code the all the test case pass
 ## Python Division
 ## Python If-Else
 ## Say Hello World With Python
-## Set .add()
+## Set .add().
+## Set .difference() Operation
 ## Set .discard(), .remove() & .pop()
+## Set .intersection() Operation
+## Set .symmetric_difference() Operation
+## Set .union() Operation
+## Set Mutations
 ## String Formatting
 ## String Split and Join
 ## String Validators
@@ -77,6 +85,7 @@ My Last optimized code the all the test case pass
 ## Symmetric Difference
 ## Text Alignment
 ## Text Wrap
+## The Captain's Room
 ## The Minion Game
 ## Tuples
 ## What's Your Name
