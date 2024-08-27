@@ -33,8 +33,8 @@ Hackerrank-Python-Solutions/
 │   └── ...
 │
 ├── SQL/
-│   ├── ProblemName1.txt
-│   ├── ProblemName2.txt
+│   ├── ProblemName1.sql
+│   ├── ProblemName2.sql
 │   └── ...
 │
 ├── README.md
