@@ -17,6 +17,7 @@
 ## Lists
 ## Loops
 ## Merge The Tools
+My Frist code with only one test case passed 
 ```
     def merge_the_tools(string, k):
     new_str = []
@@ -42,6 +43,7 @@
             if char not in new_string:
                 new_string += char
 ```
+my Last optimized code the all the test case pass
 ```
     def merge_the_tools(string, k):
     for a in range(0, len(string), k):
