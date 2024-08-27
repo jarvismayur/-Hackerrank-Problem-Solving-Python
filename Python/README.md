@@ -17,7 +17,7 @@
 ## Lists
 ## Loops
 ## Merge The Tools
-    '''
+```
     def merge_the_tools(string, k):
     new_str = []
     # your code goes here
@@ -41,9 +41,8 @@
         for char in s:
             if char not in new_string:
                 new_string += char
-        print(new_string)
-    '''
-    '''
+```
+```
     def merge_the_tools(string, k):
     for a in range(0, len(string), k):
         substring = string[a:a+k]
@@ -59,7 +58,7 @@
     if __name__ == '__main__':
         string, k = input(), int(input())
         merge_the_tools(string, k)
-    '''
+```
 ## Mutations
 ## Nested Lists
 ## No Idea!
