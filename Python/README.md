@@ -1,9 +1,50 @@
 # Python
 | Concept              | Hackerrank Problem                                         | Difficulty | Time Complexity | Space Complexity | Score |
 |----------------------|------------------------------------------------------------|------------|-----------------|------------------|-------|
-| [List Comprehensions](#list-comprehensions)     | [List Comprehension](https://www.hackerrank.com/challenges/list-comprehensions/problem) | Easy       | O(n)            | O(n)             | 10    |
-
-
+|[Alphabet Rangoli](#alphabet-rangoli)|[Alphabet Rangoli](https://www.hackerrank.com/challenges/alphabet-rangoli/problem)| | | | |
+|[Arithmetic Operators](#arithmetic-operators)|[Arithmetic Operators](https://www.hackerrank.com/challenges/arithmetic-operators/problem)| | | | |
+|[Capitalize!](#capitalize)|[Capitalize!](https://www.hackerrank.com/challenges/capitalize/problem)| | | | |
+|[Check Strict Superset](#check-strict-superset)|[Check Strict Superset](https://www.hackerrank.com/challenges/check-strict-superset/problem)| | | | |
+|[Check Subset](#check-subset)|[Check Subset](https://www.hackerrank.com/challenges/check-subset/problem)| | | | |
+|[Designer Door Mat](#designer-door-mat)|[Designer Door Mat](https://www.hackerrank.com/challenges/designer-door-mat/problem)| | | | |
+|[Find a string](#find-a-string)|[Find a string](https://www.hackerrank.com/challenges/find-a-string/problem)| | | | |
+|[Find the Runner-Up Score!](#find-the-runner-up-score)|[Find the Runner-Up Score!](https://www.hackerrank.com/challenges/find-the-runner-up-score/problem)| | | | |
+|[Finding the percentage](#finding-the-percentage)|[Finding the percentage](https://www.hackerrank.com/challenges/finding-the-percentage/problem)| | | | |
+|[Introduction to Sets](#introduction-to-sets)|[Introduction to Sets](https://www.hackerrank.com/challenges/introduction-to-sets/problem)| | | | |
+|[itertools.combinations()](#itertools-combinations)|[itertools.combinations()](https://www.hackerrank.com/challenges/itertools-combinations/problem)| | | | |
+|[itertools.combinations_with_replacement()](#itertools-combinations-with-replacement)|[itertools.combinations_with_replacement()](https://www.hackerrank.com/challenges/itertools-combinations-with-replacement/problem)| | | | |
+|[itertools.permutations()](#itertools-permutations)|[itertools.permutations()](https://www.hackerrank.com/challenges/itertools-permutations/problem)| | | | |
+|[itertools.product()](#itertools-product)|[itertools.product()](https://www.hackerrank.com/challenges/itertools-product/problem)| | | | |
+|[List Comprehensions](#list-comprehensions)|[List Comprehensions](https://www.hackerrank.com/challenges/list-comprehensions/problem)| | | | |
+|[Lists](#lists)|[Lists](https://www.hackerrank.com/challenges/lists/problem)| | | | |
+|[Loops](#loops)|[Loops](https://www.hackerrank.com/challenges/loops/problem)| | | | |
+|[Merge the Tools!](#merge-the-tools)|[Merge the Tools!](https://www.hackerrank.com/challenges/merge-the-tools/problem)| | | | |
+|[Mutations](#mutations)|[Mutations](https://www.hackerrank.com/challenges/mutations/problem)| | | | |
+|[Nested Lists](#nested-lists)|[Nested Lists](https://www.hackerrank.com/challenges/nested-lists/problem)| | | | |
+|[No Idea!](#no-idea)|[No Idea!](https://www.hackerrank.com/challenges/no-idea/problem)| | | | |
+|[Print Function](#print-function)|[Print Function](https://www.hackerrank.com/challenges/print-function/problem)| | | | |
+|[Python Division](#python-division)|[Python Division](https://www.hackerrank.com/challenges/python-division/problem)| | | | |
+|[Python If-Else](#python-if-else)|[Python If-Else](https://www.hackerrank.com/challenges/python-if-else/problem)| | | | |
+|[Say Hello World With Python](#say-hello-world-with-python)|[Say Hello World With Python](https://www.hackerrank.com/challenges/say-hello-world-with-python/problem)| | | | |
+|[Set .add()](#set-add)|[Set .add()](https://www.hackerrank.com/challenges/set-add/problem)| | | | |
+|[Set .difference() Operation](#set-difference-operation)|[Set .difference() Operation](https://www.hackerrank.com/challenges/set-difference-operation/problem)| | | | |
+|[Set .discard(), .remove() & .pop()](#set-discard-remove-pop)|[Set .discard(), .remove() & .pop()](https://www.hackerrank.com/challenges/set-discard-remove-pop/problem)| | | | |
+|[Set .intersection() Operation](#set-intersection-operation)|[Set .intersection() Operation](https://www.hackerrank.com/challenges/set-intersection-operation/problem)| | | | |
+|[Set .symmetric_difference() Operation](#set-symmetric-difference-operation)|[Set .symmetric_difference() Operation](https://www.hackerrank.com/challenges/set-symmetric-difference-operation/problem)| | | | |
+|[Set .union() Operation](#set-union-operation)|[Set .union() Operation](https://www.hackerrank.com/challenges/set-union-operation/problem)| | | | |
+|[Set Mutations](#set-mutations)|[Set Mutations](https://www.hackerrank.com/challenges/set-mutations/problem)| | | | |
+|[String Formatting](#string-formatting)|[String Formatting](https://www.hackerrank.com/challenges/string-formatting/problem)| | | | |
+|[String Split and Join](#string-split-and-join)|[String Split and Join](https://www.hackerrank.com/challenges/string-split-and-join/problem)| | | | |
+|[String Validators](#string-validators)|[String Validators](https://www.hackerrank.com/challenges/string-validators/problem)| | | | |
+|[sWAP cASE](#swap-case)|[sWAP cASE](https://www.hackerrank.com/challenges/swap-case/problem)| | | | |
+|[Symmetric Difference](#symmetric-difference)|[Symmetric Difference](https://www.hackerrank.com/challenges/symmetric-difference/problem)| | | | |
+|[Text Alignment](#text-alignment)|[Text Alignment](https://www.hackerrank.com/challenges/text-alignment/problem)| | | | |
+|[Text Wrap](#text-wrap)|[Text Wrap](https://www.hackerrank.com/challenges/text-wrap/problem)| | | | |
+|[The Captain's Room](#the-captain-s-room)|[The Captain's Room](https://www.hackerrank.com/challenges/the-captain-s-room/problem)| | | | |
+|[The Minion Game](#the-minion-game)|[The Minion Game](https://www.hackerrank.com/challenges/the-minion-game/problem)| | | | |
+|[Tuples](#tuples)|[Tuples](https://www.hackerrank.com/challenges/tuples/problem)| | | | |
+|[What's Your Name](#what-s-your-name)|[What's Your Name](https://www.hackerrank.com/challenges/what-s-your-name/problem)| | | | |
+|[Write a function](#write-a-function)|[Write a function](https://www.hackerrank.com/challenges/write-a-function/problem)| | | | |
 ## Alphabet Rangoli
 **Definition**: Alphabet Rangoli is a pattern design made with alphabetic characters arranged in a symmetrical, colorful pattern. It is often used in coding challenges to test skills related to loops, string manipulation, and formatting.
     
