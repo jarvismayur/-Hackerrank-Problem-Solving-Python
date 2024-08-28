@@ -1,7 +1,7 @@
 # Algorithm Problems
 
-| Problem Name                | Problem Statement | Solution | Time Complexity | Space Complexity | Difficulty | Points |  Video Link |
-|-----------------------------|-------------------|----------|-----------------|------------------|------------|--------|------------|
+| Concept              | Hackerrank Problem                                         | Difficulty | Time Complexity | Space Complexity | Score |
+|----------------------|------------------------------------------------------------|------------|-----------------|------------------|-------|
 |[A Very Big Sum](#a-very-big-sum)|[A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum/problem)| | | | |
 |[Apple and Orange](#apple-and-orange)|[Apple and Orange](https://www.hackerrank.com/challenges/apple-and-orange/problem)| | | | |
 |[Birthday Cake Candles](#birthday-cake-candles)|[Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem)| | | | |
