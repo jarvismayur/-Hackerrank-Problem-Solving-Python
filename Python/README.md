@@ -39,19 +39,6 @@ def print_rangoli(size):
     print(full_rangoli)
 ```
 
-- **Output**:
-```css
---------e--------
-------e-d-e------
-----e-d-c-d-e----
---e-d-c-b-c-d-e--
-e-d-c-b-a-b-c-d-e
---e-d-c-b-c-d-e--
-----e-d-c-d-e----
-------e-d-e------
---------e--------
-```
-
 - **Common Problems**:
     - **Problem**: Understanding the pattern structure can be challenging.
         - **Solution**: Break down the pattern into smaller components and build each component step-by-step.
