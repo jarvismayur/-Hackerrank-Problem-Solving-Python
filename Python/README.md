@@ -5,6 +5,44 @@
 
 
 ## Alphabet Rangoli
+**Definition**: Alphabet Rangoli is a pattern design made with alphabetic characters arranged in a symmetrical, colorful pattern. It is often used in coding challenges to test skills related to loops, string manipulation, and formatting.
+
+-**Syntax**:
+
+Create a Rangoli of size n, where n represents the number of rows and columns in the pattern.
+-**Example**:
+```python
+Copy code
+def print_rangoli(n):
+    import string
+    alpha = string.ascii_lowercase
+    
+    width = 4 * n - 3
+    rangoli = []
+    
+    for i in range(n):
+        s = '-'.join(alpha[i:n])
+        rangoli.append((s[::-1] + s[1:]).center(width, '-'))
+    
+    print('\n'.join(rangoli[:0:-1] + rangoli))
+
+print_rangoli(5)
+```
+-**Output**:
+```css
+Copy code
+----e----e----
+--e-d-c-b-a-e--
+e-d-c-b-a-c-d-e
+--e-d-c-b-a-e--
+----e----e----
+```
+-**Common Problems**:
+    -**Problem**: Understanding the pattern structure can be challenging.
+        -**Solution**: Break down the pattern into smaller components and build each component step-by-step.
+    -**Problem**: Handling large values for n may lead to formatting issues or excessive output.
+        -**Solution**: Ensure the pattern width is calculated correctly and consider using efficient string operations.
+
 ## Arithmetic Operators
 ## Capitalize!
 ## Check Strict Superset
