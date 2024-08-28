@@ -47,6 +47,53 @@ def print_rangoli(size):
         - **Solution**: Ensure the pattern width is calculated correctly and consider using efficient string operations.
 
 ## Arithmetic Operators
+**Definition**: Arithmetic operators are symbols used to perform mathematical operations on numeric values. These operators are fundamental to many programming tasks and are supported by most programming languages.
+
+- **Operators and Their Symbols**:
+
+| Operator	|Symbol	|Description	|Example|
+|-----------|-------|---------------|-------|
+|Addition	|+|	Adds two operands   |a + b|
+|Subtraction	|-|	Subtracts the second operand from the first	|a - b|
+|Multiplication	|*|	Multiplies two operands	|a * b|
+|Division	|/|	Divides the numerator by the denominator	|a / b|
+|Floor Division	|//|	Divides and returns the integer part	|a // b|
+|Modulus	|%|	Returns the remainder of the division	|a % b|
+|Exponentiation	|**|	Raises the first operand to the power of the second	|a ** b|
+- **Examples**:
+
+```python
+
+# Addition
+a = 10
+b = 5
+print(a + b)  # Output: 15
+
+# Subtraction
+print(a - b)  # Output: 5
+
+# Multiplication
+print(a * b)  # Output: 50
+
+# Division
+print(a / b)  # Output: 2.0
+
+# Floor Division
+print(a // b) # Output: 2
+
+# Modulus
+print(a % b)  # Output: 0
+
+# Exponentiation
+print(a ** b) # Output: 100000
+```
+- **Common Problems**:
+
+    - **Problem**: Integer division might not work as expected if floating-point numbers are involved.
+        - **Solution**: Ensure to use appropriate operators for integer or floating-point division based on the requirement.
+    
+    - **Problem**: The modulo operator can produce different results with negative numbers depending on the language or environment.
+        - **Solution**: Check the language-specific behavior of the modulo operator and test with various inputs.
 ## Capitalize!
 ## Check Strict Superset
 ## Check Subset
