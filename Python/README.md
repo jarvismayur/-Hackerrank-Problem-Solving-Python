@@ -1571,7 +1571,7 @@ set.add(element)
 ```python
 set.difference(*other_sets)
 ```
-    - other_sets: One or more sets to compare against. The method will return elements that are in the calling set but not in any of these sets.
+- other_sets: One or more sets to compare against. The method will return elements that are in the calling set but not in any of these sets.
 - **Examples**:
 
     - Basic Usage:
