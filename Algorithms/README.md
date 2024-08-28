@@ -2,16 +2,18 @@
 
 | Problem Name                | Problem Statement | Solution | Time Complexity | Space Complexity | Difficulty | Points |  Video Link |
 |-----------------------------|-------------------|----------|-----------------|------------------|------------|--------|------------|
-| Solve Me First               | [Link](https://www.hackerrank.com/challenges/solve-me-first/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Solve%20Me%20First/Solve_Me_First.py) | O(1) | O(1) | Easy | 1 |  
-| Simple Array Sum             | [Link](https://www.hackerrank.com/challenges/simple-array-sum/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Simple%20Array%20Sum/Simple_Array_Sum.py) | O(n) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#simple-array-sum) |
-| Compare the Triplets         | [Link](https://www.hackerrank.com/challenges/compare-the-triplets/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Compare%20the%20Triplets/Compare_the_Triplets.py) | O(1) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#compare-the-triplets) |
-| A Very Big Sum               | [Link](https://www.hackerrank.com/challenges/a-very-big-sum/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/A%20Very%20Big%20Sum/A_Very_Big_Sum.py) | O(n) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#a-very-big-sum) |
-| Diagonal Difference          | [Link](https://www.hackerrank.com/challenges/diagonal-difference/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Diagonal%20Difference/Diagonal_Difference.py) | O(n) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#diagonal-difference) |
-| Plus Minus                   | [Link](https://www.hackerrank.com/challenges/plus-minus/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Plus%20Minus/Plus_Minus.py) | O(n) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#plus-minus) |
-| Staircase                    | [Link](https://www.hackerrank.com/challenges/staircase/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Staircase/Staircase.py) | O(n) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#staircase) |
-| Mini-Max Sum                 | [Link](https://www.hackerrank.com/challenges/mini-max-sum/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Mini-Max%20Sum/Mini-Max_Sum.py) | O(n) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#mini-max-sum) |
-| Birthday Cake Candles        | [Link](https://www.hackerrank.com/challenges/birthday-cake-candles/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Birthday%20Cake%20Candles/Birthday_Cake_Candles.py) | O(n) | O(1) | Easy | 10 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#birthday-cake-candles) |
-| Time Conversion              | [Link](https://www.hackerrank.com/challenges/time-conversion/problem) | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/Time%20Conversion/Time_Conversion.py) | O(1) | O(1) | Easy | 15 | [Link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions#time-conversion) |
+|[A Very Big Sum](#a-very-big-sum)|[A Very Big Sum](https://www.hackerrank.com/challenges/a-very-big-sum/problem)| | | | |
+|[Apple and Orange](#apple-and-orange)|[Apple and Orange](https://www.hackerrank.com/challenges/apple-and-orange/problem)| | | | |
+|[Birthday Cake Candles](#birthday-cake-candles)|[Birthday Cake Candles](https://www.hackerrank.com/challenges/birthday-cake-candles/problem)| | | | |
+|[Compare the Triplets](#compare-the-triplets)|[Compare the Triplets](https://www.hackerrank.com/challenges/compare-the-triplets/problem)| | | | |
+|[Diagonal Difference](#diagonal-difference)|[Diagonal Difference](https://www.hackerrank.com/challenges/diagonal-difference/problem)| | | | |
+|[Grading Students](#grading-students)|[Grading Students](https://www.hackerrank.com/challenges/grading-students/problem)| | | | |
+|[Mini-Max Sum](#mini-max-sum)|[Mini-Max Sum](https://www.hackerrank.com/challenges/mini-max-sum/problem)| | | | |
+|[Plus Minus](#plus-minus)|[Plus Minus](https://www.hackerrank.com/challenges/plus-minus/problem)| | | | |
+|[Simple Array Sum](#simple-array-sum)|[Simple Array Sum](https://www.hackerrank.com/challenges/simple-array-sum/problem)| | | | |
+|[Solve Me First](#solve-me-first)|[Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem)| | | | |
+|[Staircase](#staircase)|[Staircase](https://www.hackerrank.com/challenges/staircase/problem)| | | | |
+|[Time Conversion](#time-conversion)|[Time Conversion](https://www.hackerrank.com/challenges/time-conversion/problem)| | | | |
 
 ## A Very Big Sum
 ## Apple and Orange
