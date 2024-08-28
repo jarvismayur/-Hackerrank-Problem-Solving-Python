@@ -17,6 +17,30 @@
 ## itertools.permutations()
 ## itertools.product()
 ## List Comprehensions
+**Definition**: List comprehension is a concise way to create lists in Python. It is a syntactic construct that allows you to create a new list by applying an expression to each item in an existing iterable.
+
+- **Syntax**:
+    ```python
+    [expression for item in iterable if condition]
+    ```
+
+- **Examples**:
+    ```python
+    # Example 1: Creating a list of squares
+    squares = [x**2 for x in range(10)]
+    print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+    # Example 2: Filtering even numbers
+    evens = [x for x in range(10) if x % 2 == 0]
+    print(evens)  # Output: [0, 2, 4, 6, 8]
+    ```
+
+- **Common Problems**:
+    - **Problem**: List comprehension can be confusing when it involves complex logic.
+      - **Solution**: Break down the logic into smaller parts or use traditional loops for better readability.
+    
+    - **Problem**: Memory issues with large iterables.
+      - **Solution**: Consider using generator expressions if the list is too large to fit into memory.
 ## Lists
 ## Loops
 ## Merge The Tools
