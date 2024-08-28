@@ -1277,116 +1277,126 @@ Logging: Writing messages to files for logging and auditing.
 ## Python Division
 **Definition**: Division in Python involves dividing one number by another. Python supports both integer and floating-point division, and the results differ based on the type of division performed.
 
-Types of Division:
+- **Types of Division**:
 
-True Division (/):
+    - **True Division (/)**:
 
-**Definition**: Returns the quotient as a floating-point number.
-- **Syntax**:
-```python
-result = dividend / divisor
-- **Examples**:
-```python
-# Example 1: True division with integers
-result = 7 / 3
-print(result)  # Output: 2.3333333333333335
+        **Definition**: Returns the quotient as a floating-point number.
+        - **Syntax**:
+        ```python
+        result = dividend / divisor
+        ```
+        - **Examples**:
+        ```python
+        # Example 1: True division with integers
+        result = 7 / 3
+        print(result)  # Output: 2.3333333333333335
 
-# Example 2: True division with floats
-result = 7.0 / 3
-print(result)  # Output: 2.3333333333333335
-Floor Division (//):
+        # Example 2: True division with floats
+        result = 7.0 / 3
+        print(result)  # Output: 2.3333333333333335
+        ```
+    - **Floor Division (//)**:
 
-**Definition**: Returns the quotient as an integer, discarding the fractional part.
-- **Syntax**:
-```python
-result = dividend // divisor
-- **Examples**:
-```python
-# Example 1: Floor division with integers
-result = 7 // 3
-print(result)  # Output: 2
+        **Definition**: Returns the quotient as an integer, discarding the fractional part.
+        - **Syntax**:
+        ```python
+        result = dividend // divisor
+        ```
+        - **Examples**:
+        ```python
+        # Example 1: Floor division with integers
+        result = 7 // 3
+        print(result)  # Output: 2
 
-# Example 2: Floor division with floats
-result = 7.0 // 3
-print(result)  # Output: 2.0
-Difference Between True Division and Floor Division:
+        # Example 2: Floor division with floats
+        result = 7.0 // 3
+        print(result)  # Output: 2.0
+        ```
+- **Difference Between True Division and Floor Division**:
 
-True Division (/) retains the decimal part, providing a floating-point result.
-Floor Division (//) removes the decimal part, providing an integer result if both operands are integers, or a float result with zero decimal part if at least one operand is a float.
-Common - **Use Cases**:
+    - True Division (/) retains the decimal part, providing a floating-point result.
+    - Floor Division (//) removes the decimal part, providing an integer result if both operands are integers, or a float result with zero decimal part if at least one operand is a float.
+- **Common Use Cases**:
 
-True Division: When you need a precise floating-point result.
-Floor Division: When you need to get the integer part of the division result, such as in algorithms that require whole numbers.
+    - True Division: When you need a precise floating-point result.
+    - Floor Division: When you need to get the integer part of the division result, such as in algorithms that require whole numbers.
 - **Common Problems**:
 
     - **Problem**: Division by zero raises a ZeroDivisionError.
-
         - **Solution**: Always check if the divisor is zero before performing division.
+
     - **Problem**: Confusion between // and / leading to unexpected results.
-
         - **Solution**: Understand the difference and choose the appropriate operator based on whether you need integer or floating-point results.
-    - **Problem**: Unexpected results with mixed integer and float operands.
 
+    - **Problem**: Unexpected results with mixed integer and float operands.
         - **Solution**: Be mindful of operand types and the resulting type of the division operation.
+
 ## Python If-Else
 **Definition**: if-else statements are used for decision-making in Python programs. They allow the execution of different blocks of code based on a condition.
 
-Basic - **Syntax**:
+- **Basic Syntax**:
 
 ```python
 if condition:
     # Code to execute if condition is True
 else:
     # Code to execute if condition is False
+```
 - **Examples**:
 
-Simple if-else Statement:
+    - Simple if-else Statement:
 
-```python
-x = 10
-if x > 5:
-    print("x is greater than 5")
-else:
-    print("x is not greater than 5")
-# Output: x is greater than 5
-if-elif-else Statement:
-
-```python
-x = 15
-if x < 10:
-    print("x is less than 10")
-elif x == 10:
-    print("x is equal to 10")
-else:
-    print("x is greater than 10")
-# Output: x is greater than 10
-Nested if-else Statement:
-
-```python
-x = 20
-if x > 10:
-    if x < 30:
-        print("x is between 10 and 30")
+    ```python
+    x = 10
+    if x > 5:
+        print("x is greater than 5")
     else:
-        print("x is 30 or greater")
-else:
-    print("x is 10 or less")
-# Output: x is between 10 and 30
-Comparison Operators:
+        print("x is not greater than 5")
+    # Output: x is greater than 5
+    ```
+    - if-elif-else Statement:
 
-==: Equal to
-!=: Not equal to
->: Greater than
-<: Less than
->=: Greater than or equal to
-<=: Less than or equal to
-Logical Operators:
+    ```python
+    x = 15
+    if x < 10:
+        print("x is less than 10")
+    elif x == 10:
+        print("x is equal to 10")
+    else:
+        print("x is greater than 10")
+    # Output: x is greater than 10
+    ```
+    - Nested if-else Statement:
 
-and: Returns True if both conditions are true.
+    ```python
+    x = 20
+    if x > 10:
+        if x < 30:
+            print("x is between 10 and 30")
+        else:
+            print("x is 30 or greater")
+    else:
+        print("x is 10 or less")
+    # Output: x is between 10 and 30
+    ```
+- **Comparison Operators**:
 
-or: Returns True if at least one condition is true.
+| Operator | Meaning| 
+|----------|--------|
+|==:| Equal to|
+|!=:| Not equal to|
+|>: |Greater than|
+|<: |Less than|
+|>=:| Greater than or equal to|
+|<=:| Less than or equal to|
+- **Logical Operators**:
 
-not: Returns True if the condition is false.
+| Operator | Meaning                                 | 
+|----------|-----------------------------------------|
+|and:| Returns True if both conditions are true.     |
+|or: | Returns True if at least one condition is true.|
+|not:| Returns True if the condition is false.       |
 
 - **Examples**:
 
@@ -1402,11 +1412,12 @@ else:
 if not x < 5:
     print("x is not less than 5")
 # Output: x is not less than 5
-Common - **Use Cases**:
+```
+- **Common Use Cases**:
 
-Decision Making: Executing code based on specific conditions.
-Validation: Checking if input values meet certain criteria.
-Branching Logic: Directing the flow of execution based on various conditions.
+    - Decision Making: Executing code based on specific conditions.
+    - Validation: Checking if input values meet certain criteria.
+    - Branching Logic: Directing the flow of execution based on various conditions.
 - **Common Problems**:
 
     - **Problem**: Incorrectly nesting if-else statements leading to logic errors.
@@ -1421,26 +1432,29 @@ Branching Logic: Directing the flow of execution based on various conditions.
 ## Say Hello World With Python
 **Definition**: The "Hello, World!" program is a simple program that outputs the string "Hello, World!" to the console. It is often used as a beginner's introduction to a new programming language.
 
-Basic - **Syntax**:
+- **Basic Syntax**:
 
 ```python
 print("Hello, World!")
+```
 - **Example**:
 
 ```python
 # Print "Hello, World!" to the console
 print("Hello, World!")
+```
 - **Output**:
 ```
 Hello, World!
-Explanation:
+```
+- **Explanation**:
 
-print(): The print() function in Python outputs the specified message to the console.
-"Hello, World!": The string to be printed. Strings in Python are enclosed in double quotes (or single quotes).
-Common - **Use Cases**:
+    - print(): The print() function in Python outputs the specified message to the console.
+    - "Hello, World!": The string to be printed. Strings in Python are enclosed in double quotes (or single quotes).
+- **Common Use Cases**:
 
-Learning the Basics: Used to verify that the programming environment is set up correctly and to practice basic syntax.
-Testing Output: Checking that output functions work as expected.
+    - Learning the Basics: Used to verify that the programming environment is set up correctly and to practice basic syntax.
+    - Testing Output: Checking that output functions work as expected.
 - **Common Problems**:
 
     - **Problem**: Forgetting to use quotes around the string.
@@ -1459,45 +1473,49 @@ Testing Output: Checking that output functions work as expected.
 
 ```python
 set.add(element)
-element: The item to be added to the set.
+```
+    - element: The item to be added to the set.
 - **Examples**:
 
-Basic Usage:
+    - Basic Usage:
 
-```python
-# Create a set
-my_set = {1, 2, 3}
+    ```python
+    # Create a set
+    my_set = {1, 2, 3}
 
-# Add an element to the set
-my_set.add(4)
-print(my_set)  # Output: {1, 2, 3, 4}
-Adding Duplicate Elements:
+    # Add an element to the set
+    my_set.add(4)
+    print(my_set)  # Output: {1, 2, 3, 4}
+    ```
+    - Adding Duplicate Elements:
 
-```python
-my_set = {1, 2, 3}
-my_set.add(2)
-print(my_set)  # Output: {1, 2, 3}
-Adding Different Data Types:
+    ```python
+    my_set = {1, 2, 3}
+    my_set.add(2)
+    print(my_set)  # Output: {1, 2, 3}
+    ```
+    -- Adding Different Data Types:
 
-```python
-my_set = {1, 2, 3}
-my_set.add("hello")
-print(my_set)  # Output: {1, 2, 3, 'hello'}
-Common - **Use Cases**:
+    ```python
+    my_set = {1, 2, 3}
+    my_set.add("hello")
+    print(my_set)  # Output: {1, 2, 3, 'hello'}
+    ```
+- **Common Use Cases**:
 
-Building Sets: Adding elements to a set dynamically.
-Ensuring Uniqueness: Using the set.add() method helps maintain the uniqueness of elements in a set.
+    - Building Sets: Adding elements to a set dynamically.
+    - Ensuring Uniqueness: Using the set.add() method helps maintain the uniqueness of elements in a set.
 - **Common Problems**:
 
     - **Problem**: Trying to add a mutable type (like a list) to a set.
-
         - **Solution**: Only immutable types (e.g., numbers, strings, tuples) can be added to a set. Use a tuple or another immutable type instead of a list.
+
     - **Problem**: Misunderstanding the behavior of sets with duplicate elements.
-
         - **Solution**: Understand that sets automatically handle duplicates and will not add an element if it is already present.
-    - **Problem**: Attempting to use add() with non-set data types.
 
+    - **Problem**: Attempting to use add() with non-set data types.
         - **Solution**: Ensure that you are calling add() on a set object.
+
 ## Set .difference() Operation
 **Definition**: The set.difference() method returns a new set containing elements that are present in the calling set but not in the specified sets. It effectively computes the difference between two or more sets.
 
@@ -1505,43 +1523,47 @@ Ensuring Uniqueness: Using the set.add() method helps maintain the uniqueness of
 
 ```python
 set.difference(*other_sets)
-*other_sets: One or more sets to compare against. The method will return elements that are in the calling set but not in any of these sets.
+```
+    - other_sets: One or more sets to compare against. The method will return elements that are in the calling set but not in any of these sets.
 - **Examples**:
 
-Basic Usage:
+    - Basic Usage:
 
-```python
-# Define two sets
-set1 = {1, 2, 3, 4, 5}
-set2 = {4, 5, 6, 7}
+    ```python
+    # Define two sets
+    set1 = {1, 2, 3, 4, 5}
+    set2 = {4, 5, 6, 7}
 
-# Find elements in set1 that are not in set2
-difference = set1.difference(set2)
-print(difference)  # Output: {1, 2, 3}
-Multiple Sets:
+    # Find elements in set1 that are not in set2
+    difference = set1.difference(set2)
+    print(difference)  # Output: {1, 2, 3}
+    ```
+    - Multiple Sets:
 
-```python
-# Define three sets
-set1 = {1, 2, 3, 4, 5}
-set2 = {4, 5, 6, 7}
-set3 = {7, 8, 9}
+    ```python
+    # Define three sets
+    set1 = {1, 2, 3, 4, 5}
+    set2 = {4, 5, 6, 7}
+    set3 = {7, 8, 9}
 
-# Find elements in set1 that are not in set2 and set3
-difference = set1.difference(set2, set3)
-print(difference)  # Output: {1, 2, 3}
-Empty Difference:
+    # Find elements in set1 that are not in set2 and set3
+    difference = set1.difference(set2, set3)
+    print(difference)  # Output: {1, 2, 3}
+    ```
+    - Empty Difference:
 
-```python
-set1 = {1, 2, 3}
-set2 = {1, 2, 3}
+    ```python
+    set1 = {1, 2, 3}
+    set2 = {1, 2, 3}
 
-# Find elements in set1 that are not in set2
-difference = set1.difference(set2)
-print(difference)  # Output: set() (empty set)
-Common - **Use Cases**:
+    # Find elements in set1 that are not in set2
+    difference = set1.difference(set2)
+    print(difference)  # Output: set() (empty set)
+    ```
+- **Common Use Cases**:
 
-Filtering: Finding elements that are unique to one set and not in others.
-Set Operations: Performing difference operations in set theory and data analysis.
+    - Filtering: Finding elements that are unique to one set and not in others.
+    - Set Operations: Performing difference operations in set theory and data analysis.
 - **Common Problems**:
 
     - **Problem**: Passing non-set data types as arguments.
@@ -1554,101 +1576,107 @@ Set Operations: Performing difference operations in set theory and data analysis
 
         - **Solution**: Understand that difference() returns a new set while difference_update() modifies the calling set in place.
 ## Set .discard(), .remove() & .pop()
-1. set.discard() Method
+1. **set.discard() Method**:
 
-**Definition**: The set.discard() method removes a specified element from the set if it exists. Unlike set.remove(), it does not raise an error if the element is not found.
+    - **Definition**: The set.discard() method removes a specified element from the set if it exists. Unlike set.remove(), it does not raise an error if the element is not found.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-set.discard(element)
-element: The item to be removed from the set.
-- **Examples**:
+    ```python
+    set.discard(element)
+    ```
+        - element: The item to be removed from the set.
+    - **Examples**:
 
-```python
-# Create a set
-my_set = {1, 2, 3, 4}
+    ```python
+    # Create a set
+    my_set = {1, 2, 3, 4}
 
-# Remove an element (no error if element is not found)
-my_set.discard(3)
-print(my_set)  # Output: {1, 2, 4}
+    # Remove an element (no error if element is not found)
+    my_set.discard(3)
+    print(my_set)  # Output: {1, 2, 4}
 
-# Discard an element not in the set (no error)
-my_set.discard(5)
-print(my_set)  # Output: {1, 2, 4}
-Common - **Use Cases**:
+    # Discard an element not in the set (no error)
+    my_set.discard(5)
+    print(my_set)  # Output: {1, 2, 4}
+    ```
+    - **Common Use Cases**:
 
-Safe Removal: Removing an element without risking an error if the element does not exist.
-- **Common Problems**:
+        - Safe Removal: Removing an element without risking an error if the element does not exist.
+    - **Common Problems**:
 
-    - **Problem**: Misunderstanding that discard() does not raise an error if the element is missing.
-        - **Solution**: Use discard() when you want to avoid handling potential errors from non-existing elements.
-2. set.remove() Method
+        - **Problem**: Misunderstanding that discard() does not raise an error if the element is missing.
+            - **Solution**: Use discard() when you want to avoid handling potential errors from non-existing elements.
+2. **set.remove() Method**:
 
-**Definition**: The set.remove() method removes a specified element from the set. If the element is not present, it raises a KeyError.
+    **Definition**: The set.remove() method removes a specified element from the set. If the element is not present, it raises a KeyError.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-set.remove(element)
-element: The item to be removed from the set.
-- **Examples**:
+    ```python
+    set.remove(element)
+    ```
+        - element: The item to be removed from the set.
+    - **Examples**:
 
-```python
-# Create a set
-my_set = {1, 2, 3, 4}
+    ```python
+    # Create a set
+    my_set = {1, 2, 3, 4}
 
-# Remove an element (raises KeyError if element is not found)
-my_set.remove(3)
-print(my_set)  # Output: {1, 2, 4}
+    # Remove an element (raises KeyError if element is not found)
+    my_set.remove(3)
+    print(my_set)  # Output: {1, 2, 4}
 
-# Attempt to remove an element not in the set
-try:
-    my_set.remove(5)
-except KeyError:
-    print("Element not found")
-# Output: Element not found
-Common - **Use Cases**:
+    # Attempt to remove an element not in the set
+    try:
+        my_set.remove(5)
+    except KeyError:
+        print("Element not found")
+    # Output: Element not found
+    ```
+    - **Common Use Cases**:
 
-Error Handling: Removing an element with explicit error handling if the element is absent.
-- **Common Problems**:
+    Error Handling: Removing an element with explicit error handling if the element is absent.
+    - **Common Problems**:
 
-    - **Problem**: Attempting to remove an element that does not exist raises an error.
-        - **Solution**: Handle potential KeyError exceptions or use discard() if no error is preferred.
-3. set.pop() Method
+        - **Problem**: Attempting to remove an element that does not exist raises an error.
+            - **Solution**: Handle potential KeyError exceptions or use discard() if no error is preferred.
+3. **set.pop() Method**:
 
-**Definition**: The set.pop() method removes and returns an arbitrary element from the set. Since sets are unordered, there is no guarantee of which element will be removed.
+    **Definition**: The set.pop() method removes and returns an arbitrary element from the set. Since sets are unordered, there is no guarantee of which element will be removed.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-element = set.pop()
-element: The item removed from the set (returned by the method).
-- **Examples**:
+    ```python
+    element = set.pop()
+    ```
+        - element: The item removed from the set (returned by the method).
+    - **Examples**:
 
-```python
-# Create a set
-my_set = {1, 2, 3, 4}
+    ```python
+    # Create a set
+    my_set = {1, 2, 3, 4}
 
-# Remove and return an arbitrary element
-element = my_set.pop()
-print(element)  # Output: (an arbitrary element, e.g., 1)
-print(my_set)   # Output: Set with the remaining elements
+    # Remove and return an arbitrary element
+    element = my_set.pop()
+    print(element)  # Output: (an arbitrary element, e.g., 1)
+    print(my_set)   # Output: Set with the remaining elements
 
-# Attempt to pop from an empty set
-empty_set = set()
-try:
-    empty_set.pop()
-except KeyError:
-    print("Set is empty")
-# Output: Set is empty
-Common - **Use Cases**:
+    # Attempt to pop from an empty set
+    empty_set = set()
+    try:
+        empty_set.pop()
+    except KeyError:
+        print("Set is empty")
+    # Output: Set is empty
+    ```
+    - **Common Use Cases**:
 
-Arbitrary Removal: Removing an element when the specific element to be removed is not known.
-- **Common Problems**:
+    Arbitrary Removal: Removing an element when the specific element to be removed is not known.
+    - **Common Problems**:
 
-    - **Problem**: Popping from an empty set raises a KeyError.
-        - **Solution**: Check if the set is empty before using pop().
+        - **Problem**: Popping from an empty set raises a KeyError.
+            - **Solution**: Check if the set is empty before using pop().
 
 ## Set .intersection() Operation
 **Definition**: The set.intersection() method returns a new set containing elements that are common to all specified sets. It effectively computes the intersection of two or more sets.
@@ -1657,44 +1685,48 @@ Arbitrary Removal: Removing an element when the specific element to be removed i
 
 ```python
 set.intersection(*other_sets)
-*other_sets: One or more sets to compare against. The method will return elements that are present in the calling set and all other specified sets.
+```
+- other_sets: One or more sets to compare against. The method will return elements that are present in the calling set and all other specified sets.
 - **Examples**:
 
-Basic Usage:
+    - Basic Usage:
 
-```python
-# Define two sets
-set1 = {1, 2, 3, 4, 5}
-set2 = {4, 5, 6, 7}
+    ```python
+    # Define two sets
+    set1 = {1, 2, 3, 4, 5}
+    set2 = {4, 5, 6, 7}
 
-# Find elements common to both set1 and set2
-intersection = set1.intersection(set2)
-print(intersection)  # Output: {4, 5}
-Multiple Sets:
+    # Find elements common to both set1 and set2
+    intersection = set1.intersection(set2)
+    print(intersection)  # Output: {4, 5}
+    ```
+    - Multiple Sets:
 
-```python
-# Define three sets
-set1 = {1, 2, 3, 4, 5}
-set2 = {4, 5, 6, 7}
-set3 = {5, 6, 7, 8}
+    ```python
+    # Define three sets
+    set1 = {1, 2, 3, 4, 5}
+    set2 = {4, 5, 6, 7}
+    set3 = {5, 6, 7, 8}
 
-# Find elements common to set1, set2, and set3
-intersection = set1.intersection(set2, set3)
-print(intersection)  # Output: {5}
-Empty Intersection:
+    # Find elements common to set1, set2, and set3
+    intersection = set1.intersection(set2, set3)
+    print(intersection)  # Output: {5}
+    ```
+    - Empty Intersection:
 
-```python
-# Define sets with no common elements
-set1 = {1, 2, 3}
-set2 = {4, 5, 6}
+    ```python
+    # Define sets with no common elements
+    set1 = {1, 2, 3}
+    set2 = {4, 5, 6}
 
-# Find elements common to both sets
-intersection = set1.intersection(set2)
-print(intersection)  # Output: set() (empty set)
-Common - **Use Cases**:
+    # Find elements common to both sets
+    intersection = set1.intersection(set2)
+    print(intersection)  # Output: set() (empty set)
+    ```
+- **Common Use Cases**:
 
-Finding Common Elements: Identifying elements that are shared among multiple sets.
-Set Operations: Performing intersection operations in data analysis and set theory.
+    - Finding Common Elements: Identifying elements that are shared among multiple sets.
+    - Set Operations: Performing intersection operations in data analysis and set theory.
 - **Common Problems**:
 
     - **Problem**: Passing non-set data types as arguments.
@@ -1713,44 +1745,48 @@ Set Operations: Performing intersection operations in data analysis and set theo
 
 ```python
 set.symmetric_difference(other_set)
-other_set: The set to compare against. The method will return elements that are in either the calling set or the other_set, but not in both.
+```
+    - other_set: The set to compare against. The method will return elements that are in either the calling set or the other_set, but not in both.
 - **Examples**:
 
-Basic Usage:
+    - Basic Usage:
 
-```python
-# Define two sets
-set1 = {1, 2, 3, 4, 5}
-set2 = {4, 5, 6, 7}
+    ```python
+    # Define two sets
+    set1 = {1, 2, 3, 4, 5}
+    set2 = {4, 5, 6, 7}
 
-# Find elements that are in either set1 or set2, but not in both
-symmetric_difference = set1.symmetric_difference(set2)
-print(symmetric_difference)  # Output: {1, 2, 6, 7}
-Multiple Sets:
+    # Find elements that are in either set1 or set2, but not in both
+    symmetric_difference = set1.symmetric_difference(set2)
+    print(symmetric_difference)  # Output: {1, 2, 6, 7}
+    ```
+    - Multiple Sets:
 
-```python
-# Define three sets
-set1 = {1, 2, 3, 4, 5}
-set2 = {4, 5, 6, 7}
-set3 = {5, 6, 7, 8}
+    ```python
+    # Define three sets
+    set1 = {1, 2, 3, 4, 5}
+    set2 = {4, 5, 6, 7}
+    set3 = {5, 6, 7, 8}
 
-# Find elements that are unique to set1, set2, and set3
-symmetric_difference = set1.symmetric_difference(set2).symmetric_difference(set3)
-print(symmetric_difference)  # Output: {1, 2, 8}
-Empty Symmetric Difference:
+    # Find elements that are unique to set1, set2, and set3
+    symmetric_difference = set1.symmetric_difference(set2).symmetric_difference(set3)
+    print(symmetric_difference)  # Output: {1, 2, 8}
+    ```
+    - Empty Symmetric Difference:
 
-```python
-# Define sets with the same elements
-set1 = {1, 2, 3}
-set2 = {1, 2, 3}
+    ```python
+    # Define sets with the same elements
+    set1 = {1, 2, 3}
+    set2 = {1, 2, 3}
 
-# Find elements that are in either set1 or set2, but not in both
-symmetric_difference = set1.symmetric_difference(set2)
-print(symmetric_difference)  # Output: set() (empty set)
-Common - **Use Cases**:
+    # Find elements that are in either set1 or set2, but not in both
+    symmetric_difference = set1.symmetric_difference(set2)
+    print(symmetric_difference)  # Output: set() (empty set)
+    ```
+- **Common Use Cases**:
 
-Identifying Unique Elements: Finding elements that are unique to each set, useful in various data analysis scenarios.
-Set Operations: Performing symmetric difference operations in set theory and data manipulation.
+    - Identifying Unique Elements: Finding elements that are unique to each set, useful in various data analysis scenarios.
+    - Set Operations: Performing symmetric difference operations in set theory and data manipulation.
 - **Common Problems**:
 
     - **Problem**: Passing non-set data types as arguments.
@@ -1769,44 +1805,48 @@ Set Operations: Performing symmetric difference operations in set theory and dat
 
 ```python
 set.union(*other_sets)
-*other_sets: One or more sets to be combined with the calling set. The method will return a new set containing all unique elements from the calling set and all other specified sets.
+```
+- other_sets: One or more sets to be combined with the calling set. The method will return a new set containing all unique elements from the calling set and all other specified sets.
 - **Examples**:
 
-Basic Usage:
+    Basic Usage:
 
-```python
-# Define two sets
-set1 = {1, 2, 3, 4}
-set2 = {3, 4, 5, 6}
+    ```python
+    # Define two sets
+    set1 = {1, 2, 3, 4}
+    set2 = {3, 4, 5, 6}
 
-# Find the union of set1 and set2
-union = set1.union(set2)
-print(union)  # Output: {1, 2, 3, 4, 5, 6}
-Multiple Sets:
+    # Find the union of set1 and set2
+    union = set1.union(set2)
+    print(union)  # Output: {1, 2, 3, 4, 5, 6}
+    ```
+    - Multiple Sets:
 
-```python
-# Define three sets
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
-set3 = {5, 6, 7}
+    ```python
+    # Define three sets
+    set1 = {1, 2, 3}
+    set2 = {3, 4, 5}
+    set3 = {5, 6, 7}
 
-# Find the union of set1, set2, and set3
-union = set1.union(set2, set3)
-print(union)  # Output: {1, 2, 3, 4, 5, 6, 7}
-Union with an Empty Set:
+    # Find the union of set1, set2, and set3
+    union = set1.union(set2, set3)
+    print(union)  # Output: {1, 2, 3, 4, 5, 6, 7}
+    ```
+    - Union with an Empty Set:
 
-```python
-# Define a set and an empty set
-set1 = {1, 2, 3}
-empty_set = set()
+    ```python
+    # Define a set and an empty set
+    set1 = {1, 2, 3}
+    empty_set = set()
 
-# Find the union of set1 and an empty set
-union = set1.union(empty_set)
-print(union)  # Output: {1, 2, 3}
-Common - **Use Cases**:
+    # Find the union of set1 and an empty set
+    union = set1.union(empty_set)
+    print(union)  # Output: {1, 2, 3}
+    ```
+- **Common Use Cases**:
 
-Combining Sets: Merging multiple sets into a single set containing all unique elements.
-Data Aggregation: Collecting unique items from different datasets or collections.
+    - Combining Sets: Merging multiple sets into a single set containing all unique elements.
+    - Data Aggregation: Collecting unique items from different datasets or collections.
 - **Common Problems**:
 
     - **Problem**: Passing non-set data types as arguments.
@@ -1821,431 +1861,471 @@ Data Aggregation: Collecting unique items from different datasets or collections
 ## Set Mutations
 **Definition**: Set mutations refer to methods that modify the set in place, such as adding, removing, or updating elements. These operations change the state of the original set rather than creating a new set.
 
-1. set.add()
-**Definition**: Adds a single element to the set. If the element is already present, it does nothing.
+1. **set.add()**:
+    **Definition**: Adds a single element to the set. If the element is already present, it does nothing.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-set.add(element)
-- **Example**:
+    ```python
+    set.add(element)
+    ```
+    - **Example**:
 
-```python
-my_set = {1, 2, 3}
-my_set.add(4)
-print(my_set)  # Output: {1, 2, 3, 4}
-2. set.remove()
-**Definition**: Removes a specified element from the set. Raises a KeyError if the element is not found.
+    ```python
+    my_set = {1, 2, 3}
+    my_set.add(4)
+    print(my_set)  # Output: {1, 2, 3, 4}
+    ```
+2. **set.remove()**:
+    **Definition**: Removes a specified element from the set. Raises a KeyError if the element is not found.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-set.remove(element)
-- **Example**:
+    ```python
+    set.remove(element)
+    ```
+    - **Example**:
 
-```python
-my_set = {1, 2, 3, 4}
-my_set.remove(3)
-print(my_set)  # Output: {1, 2, 4}
-- **Common Problems**:
+    ```python
+    my_set = {1, 2, 3, 4}
+    my_set.remove(3)
+    print(my_set)  # Output: {1, 2, 4}
+    ```
+    - **Common Problems**:
 
-    - **Problem**: Attempting to remove an element that does not exist.
-        - **Solution**: Use discard() if you want to avoid handling exceptions.
-3. set.discard()
-**Definition**: Removes a specified element from the set if it exists. Does nothing if the element is not found, unlike remove().
+        - **Problem**: Attempting to remove an element that does not exist.
+            - **Solution**: Use discard() if you want to avoid handling exceptions.
+3. **set.discard()**:
+    **Definition**: Removes a specified element from the set if it exists. Does nothing if the element is not found, unlike remove().
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-set.discard(element)
-- **Example**:
+    ```python
+    set.discard(element)
+    ```
+    - **Example**:
 
-```python
-my_set = {1, 2, 3, 4}
-my_set.discard(3)
-print(my_set)  # Output: {1, 2, 4}
-- **Common Problems**:
+    ```python
+    my_set = {1, 2, 3, 4}
+    my_set.discard(3)
+    print(my_set)  # Output: {1, 2, 4}
+    ```
+    - **Common Problems**:
 
-    - **Problem**: No effect if the element is missing.
-        - **Solution**: Use discard() when you want to avoid exceptions for non-existent elements.
-4. set.pop()
-**Definition**: Removes and returns an arbitrary element from the set. Raises a KeyError if the set is empty.
+        - **Problem**: No effect if the element is missing.
+            - **Solution**: Use discard() when you want to avoid exceptions for non-existent elements.
+4. **set.pop()**:
+    **Definition**: Removes and returns an arbitrary element from the set. Raises a KeyError if the set is empty.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-element = set.pop()
-- **Example**:
+    ```python
+    element = set.pop()
+    ```
+    - **Example**:
 
-```python
-my_set = {1, 2, 3}
-element = my_set.pop()
-print(element)  # Output: (an arbitrary element, e.g., 1)
-print(my_set)   # Output: Set with the remaining elements
-- **Common Problems**:
+    ```python
+    my_set = {1, 2, 3}
+    element = my_set.pop()
+    print(element)  # Output: (an arbitrary element, e.g., 1)
+    print(my_set)   # Output: Set with the remaining elements
+    ```
+    - **Common Problems**:
 
-    - **Problem**: Attempting to pop from an empty set.
-        - **Solution**: Check if the set is empty before using pop().
-5. set.update()
-**Definition**: Updates the set with elements from one or more other sets or iterables. Adds all unique elements from the provided arguments.
+        - **Problem**: Attempting to pop from an empty set.
+            - **Solution**: Check if the set is empty before using pop().
+5. **set.update()**:
+    **Definition**: Updates the set with elements from one or more other sets or iterables. Adds all unique elements from the provided arguments.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-set.update(*other_sets_or_iterables)
-- **Example**:
+    ```python
+    set.update(*other_sets_or_iterables)
+    ```
+    - **Example**:
 
-```python
-my_set = {1, 2, 3}
-my_set.update({3, 4, 5})
-print(my_set)  # Output: {1, 2, 3, 4, 5}
-6. set.intersection_update()
-**Definition**: Updates the set to keep only elements found in both the set and all specified sets.
+    ```python
+    my_set = {1, 2, 3}
+    my_set.update({3, 4, 5})
+    print(my_set)  # Output: {1, 2, 3, 4, 5}
+    ```
+6. **set.intersection_update()**:
+    **Definition**: Updates the set to keep only elements found in both the set and all specified sets.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-set.intersection_update(*other_sets)
-- **Example**:
+    ```python
+    set.intersection_update(*other_sets)
+    ```
+    - **Example**:
 
-```python
-my_set = {1, 2, 3, 4}
-my_set.intersection_update({2, 3, 5})
-print(my_set)  # Output: {2, 3}
-7. set.difference_update()
-**Definition**: Updates the set to remove elements found in the specified sets.
+    ```python
+    my_set = {1, 2, 3, 4}
+    my_set.intersection_update({2, 3, 5})
+    print(my_set)  # Output: {2, 3}
+    ```
+7. **set.difference_update()**:
+    **Definition**: Updates the set to remove elements found in the specified sets.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-set.difference_update(*other_sets)
-- **Example**:
+    ```python
+    set.difference_update(*other_sets)
+    ```
+    - **Example**:
 
-```python
-my_set = {1, 2, 3, 4}
-my_set.difference_update({3, 4, 5})
-print(my_set)  # Output: {1, 2}
-8. set.symmetric_difference_update()
-**Definition**: Updates the set to keep only elements that are in either of the sets but not in their intersection.
+    ```python
+    my_set = {1, 2, 3, 4}
+    my_set.difference_update({3, 4, 5})
+    print(my_set)  # Output: {1, 2}
+    ```
+8. **set.symmetric_difference_update()**:
+    **Definition**: Updates the set to keep only elements that are in either of the sets but not in their intersection.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-set.symmetric_difference_update(other_set)
-- **Example**:
+    ```python
+    set.symmetric_difference_update(other_set)
+    ```
+    - **Example**:
 
-```python
-my_set = {1, 2, 3, 4}
-my_set.symmetric_difference_update({3, 4, 5, 6})
-print(my_set)  # Output: {1, 2, 5, 6}
+    ```python
+    my_set = {1, 2, 3, 4}
+    my_set.symmetric_difference_update({3, 4, 5, 6})
+    print(my_set)  # Output: {1, 2, 5, 6}
+    ```
 ## String Formatting
 **Definition**: String formatting in Python refers to the techniques used to construct strings by embedding variables and expressions within string literals. There are several methods to achieve string formatting, including the % operator, str.format(), and f-strings (formatted string literals).
 
-1. % Operator (Old Style Formatting)
-**Definition**: This is an older method for formatting strings, similar to the printf-style formatting found in C.
+1. **% Operator (Old Style Formatting)**:
+    **Definition**: This is an older method for formatting strings, similar to the printf-style formatting found in C.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-"format_string" % (values)
-format_string: A string containing format specifiers (e.g., %s, %d).
-values: Values to be inserted into the format specifiers.
-- **Examples**:
+    ```python
+    "format_string" % (values)
+    ```
+    - format_string: A string containing format specifiers (e.g., %s, %d).
+    values: Values to be inserted into the format specifiers.
+    - **Examples**:
 
-```python
-# Basic example
-name = "Alice"
-age = 30
-formatted_string = "Name: %s, Age: %d" % (name, age)
-print(formatted_string)  # Output: Name: Alice, Age: 30
+    ```python
+    # Basic example
+    name = "Alice"
+    age = 30
+    formatted_string = "Name: %s, Age: %d" % (name, age)
+    print(formatted_string)  # Output: Name: Alice, Age: 30
 
-# Precision and width
-pi = 3.14159
-formatted_string = "Pi to two decimal places: %.2f" % pi
-print(formatted_string)  # Output: Pi to two decimal places: 3.14
-- **Common Problems**:
+    # Precision and width
+    pi = 3.14159
+    formatted_string = "Pi to two decimal places: %.2f" % pi
+    print(formatted_string)  # Output: Pi to two decimal places: 3.14
+    ```
+    - **Common Problems**:
 
-    - **Problem**: Limited formatting options and readability.
-        - **Solution**: Consider using str.format() or f-strings for more complex formatting.
-2. str.format() Method
-**Definition**: The str.format() method provides a more flexible way to format strings compared to the % operator.
+        - **Problem**: Limited formatting options and readability.
+            - **Solution**: Consider using str.format() or f-strings for more complex formatting.
+2. **str.format() Method**:
+    **Definition**: The str.format() method provides a more flexible way to format strings compared to the % operator.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-"format_string".format(values)
-format_string: A string containing placeholders ({}) where values will be inserted.
-values: Values to be inserted into the placeholders.
-- **Examples**:
+    ```python
+    "format_string".format(values)
+    ```
+    - format_string: A string containing placeholders ({}) where values will be inserted.
+    - values: Values to be inserted into the placeholders.
+    - **Examples**:
 
-```python
-# Basic example
-name = "Bob"
-age = 25
-formatted_string = "Name: {}, Age: {}".format(name, age)
-print(formatted_string)  # Output: Name: Bob, Age: 25
+    ```python
+    # Basic example
+    name = "Bob"
+    age = 25
+    formatted_string = "Name: {}, Age: {}".format(name, age)
+    print(formatted_string)  # Output: Name: Bob, Age: 25
 
-# Using index and named placeholders
-formatted_string = "Name: {0}, Age: {1}. {0} is {1} years old.".format(name, age)
-print(formatted_string)  # Output: Name: Bob, Age: 25. Bob is 25 years old.
+    # Using index and named placeholders
+    formatted_string = "Name: {0}, Age: {1}. {0} is {1} years old.".format(name, age)
+    print(formatted_string)  # Output: Name: Bob, Age: 25. Bob is 25 years old.
 
-# Formatting numbers
-pi = 3.14159
-formatted_string = "Pi to two decimal places: {:.2f}".format(pi)
-print(formatted_string)  # Output: Pi to two decimal places: 3.14
-- **Common Problems**:
+    # Formatting numbers
+    pi = 3.14159
+    formatted_string = "Pi to two decimal places: {:.2f}".format(pi)
+    print(formatted_string)  # Output: Pi to two decimal places: 3.14
+    ```
+    - **Common Problems**:
 
-    - **Problem**: Complexity increases with multiple placeholders and complex formatting.
-        - **Solution**: Use f-strings for a more readable and modern approach.
-3. f-strings (Formatted String Literals) (Python 3.6+)
-**Definition**: F-strings provide a concise and readable way to format strings by embedding expressions inside curly braces {} within string literals.
+        - **Problem**: Complexity increases with multiple placeholders and complex formatting.
+            - **Solution**: Use f-strings for a more readable and modern approach.
+3. **f-strings (Formatted String Literals) (Python 3.6+)**:
+    **Definition**: F-strings provide a concise and readable way to format strings by embedding expressions inside curly braces {} within string literals.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-f"format_string with {expression}"
-format_string: A string literal prefixed with f.
-expression: Any valid Python expression or variable.
-- **Examples**:
+    ```python
+    f"format_string with {expression}"
+    ```
+    - format_string: A string literal prefixed with f.
+    - expression: Any valid Python expression or variable.
+    - **Examples**:
 
-```python
-# Basic example
-name = "Carol"
-age = 22
-formatted_string = f"Name: {name}, Age: {age}"
-print(formatted_string)  # Output: Name: Carol, Age: 22
+    ```python
+    # Basic example
+    name = "Carol"
+    age = 22
+    formatted_string = f"Name: {name}, Age: {age}"
+    print(formatted_string)  # Output: Name: Carol, Age: 22
 
-# Using expressions
-pi = 3.14159
-formatted_string = f"Pi to two decimal places: {pi:.2f}"
-print(formatted_string)  # Output: Pi to two decimal places: 3.14
+    # Using expressions
+    pi = 3.14159
+    formatted_string = f"Pi to two decimal places: {pi:.2f}"
+    print(formatted_string)  # Output: Pi to two decimal places: 3.14
 
-# Evaluating expressions
-x = 5
-formatted_string = f"Five squared is {x**2}"
-print(formatted_string)  # Output: Five squared is 25
-- **Common Problems**:
+    # Evaluating expressions
+    x = 5
+    formatted_string = f"Five squared is {x**2}"
+    print(formatted_string)  # Output: Five squared is 25
+    ```
+    - **Common Problems**:
 
-    - **Problem**: F-strings are available only in Python 3.6 and later.
-        - **Solution**: Use str.format() or % operator in earlier versions of Python.
+        - **Problem**: F-strings are available only in Python 3.6 and later.
+            - **Solution**: Use str.format() or % operator in earlier versions of Python.
 ## String Split and Join
 **Definition**: String splitting and joining are operations used to manipulate and process strings. Splitting divides a string into a list of substrings based on a delimiter, while joining combines a list of strings into a single string with a specified separator.
 
-1. str.split()
-**Definition**: The str.split() method divides a string into a list of substrings based on a specified delimiter. If no delimiter is provided, it splits on whitespace by default.
+1. **str.split()**:
+    **Definition**: The str.split() method divides a string into a list of substrings based on a specified delimiter. If no delimiter is provided, it splits on whitespace by default.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-str.split(separator, maxsplit)
-separator (optional): The delimiter on which to split the string. If omitted, any whitespace is used.
-maxsplit (optional): The maximum number of splits to perform. If omitted, all occurrences of the delimiter are used.
-- **Examples**:
+    ```python
+    str.split(separator, maxsplit)
+    ```
+    - separator (optional): The delimiter on which to split the string. If omitted, any whitespace is used.
+    - maxsplit (optional): The maximum number of splits to perform. If omitted, all occurrences of the delimiter are used.
+    - **Examples**:
 
-```python
-# Basic example
-text = "apple,orange,banana"
-result = text.split(",")
-print(result)  # Output: ['apple', 'orange', 'banana']
+    ```python
+    # Basic example
+    text = "apple,orange,banana"
+    result = text.split(",")
+    print(result)  # Output: ['apple', 'orange', 'banana']
 
-# Splitting on whitespace
-text = "This is a sentence."
-result = text.split()
-print(result)  # Output: ['This', 'is', 'a', 'sentence.']
+    # Splitting on whitespace
+    text = "This is a sentence."
+    result = text.split()
+    print(result)  # Output: ['This', 'is', 'a', 'sentence.']
 
-# Limiting splits
-text = "one two three four"
-result = text.split(" ", 2)
-print(result)  # Output: ['one', 'two', 'three four']
-- **Common Problems**:
+    # Limiting splits
+    text = "one two three four"
+    result = text.split(" ", 2)
+    print(result)  # Output: ['one', 'two', 'three four']
+    ```
+    - **Common Problems**:
 
-    - **Problem**: Delimiter not found in the string.
+        - **Problem**: Delimiter not found in the string.
 
-        - **Solution**: Check if the delimiter is correctly specified or handle the resulting list if empty.
-    - **Problem**: Unexpected whitespace handling.
+            - **Solution**: Check if the delimiter is correctly specified or handle the resulting list if empty.
+        - **Problem**: Unexpected whitespace handling.
 
-        - **Solution**: Be aware of how split() treats whitespace when no delimiter is specified.
-2. str.join()
-**Definition**: The str.join() method combines a list of strings into a single string, with a specified separator between each element.
+            - **Solution**: Be aware of how split() treats whitespace when no delimiter is specified.
+2. **str.join()**:
+    **Definition**: The str.join() method combines a list of strings into a single string, with a specified separator between each element.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-separator.join(iterable)
-separator: The string that will be placed between elements of the iterable.
-iterable: A sequence of strings to join into a single string.
-- **Examples**:
+    ```python
+    separator.join(iterable)
+    ```
+    - separator: The string that will be placed between elements of the iterable.
+    - iterable: A sequence of strings to join into a single string.
+    - **Examples**:
 
-```python
-# Basic example
-words = ['apple', 'orange', 'banana']
-result = ", ".join(words)
-print(result)  # Output: 'apple, orange, banana'
+    ```python
+    # Basic example
+    words = ['apple', 'orange', 'banana']
+    result = ", ".join(words)
+    print(result)  # Output: 'apple, orange, banana'
 
-# Joining with no separator
-words = ['hello', 'world']
-result = "".join(words)
-print(result)  # Output: 'helloworld'
+    # Joining with no separator
+    words = ['hello', 'world']
+    result = "".join(words)
+    print(result)  # Output: 'helloworld'
 
-# Joining with newline separator
-lines = ['first line', 'second line', 'third line']
-result = "\n".join(lines)
-print(result)  
-# - **Output**:
-# first line
-# second line
-# third line
-- **Common Problems**:
+    # Joining with newline separator
+    lines = ['first line', 'second line', 'third line']
+    result = "\n".join(lines)
+    print(result)  
+    # - **Output**:
+    # first line
+    # second line
+    # third line
+    ```
+    - **Common Problems**:
 
-    - **Problem**: Trying to join non-string elements.
+        - **Problem**: Trying to join non-string elements.
 
-        - **Solution**: Ensure that all elements in the iterable are strings before using join().
-    - **Problem**: Unexpected results when using separators.
+            - **Solution**: Ensure that all elements in the iterable are strings before using join().
+        - **Problem**: Unexpected results when using separators.
 
-        - **Solution**: Verify the separator and its intended placement between elements.
+            - **Solution**: Verify the separator and its intended placement between elements.
 ## String Validators
 **Definition**: String validators are methods used to check if a string meets specific criteria, such as being alphanumeric, alphabetical, numeric, or having specific formatting requirements.
 
-1. str.isalnum()
-**Definition**: Returns True if all characters in the string are alphanumeric (i.e., letters and digits) and there is at least one character; otherwise, returns False.
+1. **str.isalnum()**:
+    **Definition**: Returns True if all characters in the string are alphanumeric (i.e., letters and digits) and there is at least one character; otherwise, returns False.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-str.isalnum()
-- **Examples**:
+    ```python
+    str.isalnum()
+    ```
+    - **Examples**:
 
-```python
-# Example with alphanumeric characters
-text = "abc123"
-result = text.isalnum()
-print(result)  # Output: True
+    ```python
+    # Example with alphanumeric characters
+    text = "abc123"
+    result = text.isalnum()
+    print(result)  # Output: True
 
-# Example with non-alphanumeric characters
-text = "abc 123"
-result = text.isalnum()
-print(result)  # Output: False
-2. str.isalpha()
-**Definition**: Returns True if all characters in the string are alphabetic and there is at least one character; otherwise, returns False.
+    # Example with non-alphanumeric characters
+    text = "abc 123"
+    result = text.isalnum()
+    print(result)  # Output: False
+    ```
+2. **str.isalpha()**:
+    **Definition**: Returns True if all characters in the string are alphabetic and there is at least one character; otherwise, returns False.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-str.isalpha()
-- **Examples**:
+    ```python
+    str.isalpha()
+    ```
+    - **Examples**:
 
-```python
-# Example with alphabetic characters
-text = "hello"
-result = text.isalpha()
-print(result)  # Output: True
+    ```python
+    # Example with alphabetic characters
+    text = "hello"
+    result = text.isalpha()
+    print(result)  # Output: True
 
-# Example with numeric characters
-text = "hello123"
-result = text.isalpha()
-print(result)  # Output: False
-3. str.isdigit()
-**Definition**: Returns True if all characters in the string are digits and there is at least one character; otherwise, returns False.
+    # Example with numeric characters
+    text = "hello123"
+    result = text.isalpha()
+    print(result)  # Output: False
+    ```
+3. **str.isdigit()**:
+    **Definition**: Returns True if all characters in the string are digits and there is at least one character; otherwise, returns False.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-str.isdigit()
-- **Examples**:
+    ```python
+    str.isdigit()
+    ```
+    - **Examples**:
 
-```python
-# Example with digit characters
-text = "12345"
-result = text.isdigit()
-print(result)  # Output: True
+    ```python
+    # Example with digit characters
+    text = "12345"
+    result = text.isdigit()
+    print(result)  # Output: True
 
-# Example with non-digit characters
-text = "123a5"
-result = text.isdigit()
-print(result)  # Output: False
-4. str.isspace()
-**Definition**: Returns True if all characters in the string are whitespace characters and there is at least one character; otherwise, returns False.
+    # Example with non-digit characters
+    text = "123a5"
+    result = text.isdigit()
+    print(result)  # Output: False
+    ```
+4. **str.isspace()**:
+    **Definition**: Returns True if all characters in the string are whitespace characters and there is at least one character; otherwise, returns False.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-str.isspace()
-- **Examples**:
+    ```python
+    str.isspace()
+    ```
+    - **Examples**:
 
-```python
-# Example with whitespace characters
-text = "    "
-result = text.isspace()
-print(result)  # Output: True
+    ```python
+    # Example with whitespace characters
+    text = "    "
+    result = text.isspace()
+    print(result)  # Output: True
 
-# Example with mixed characters
-text = "  hello  "
-result = text.isspace()
-print(result)  # Output: False
-5. str.islower()
-**Definition**: Returns True if all characters in the string are lowercase letters and there is at least one character; otherwise, returns False.
+    # Example with mixed characters
+    text = "  hello  "
+    result = text.isspace()
+    print(result)  # Output: False
+    ```
+5. **str.islower()**:
+    **Definition**: Returns True if all characters in the string are lowercase letters and there is at least one character; otherwise, returns False.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-str.islower()
-- **Examples**:
+    ```python
+    str.islower()
+    ```
+    - **Examples**:
 
-```python
-# Example with lowercase letters
-text = "hello"
-result = text.islower()
-print(result)  # Output: True
+    ```python
+    # Example with lowercase letters
+    text = "hello"
+    result = text.islower()
+    print(result)  # Output: True
 
-# Example with uppercase letters
-text = "Hello"
-result = text.islower()
-print(result)  # Output: False
-6. str.isupper()
-**Definition**: Returns True if all characters in the string are uppercase letters and there is at least one character; otherwise, returns False.
+    # Example with uppercase letters
+    text = "Hello"
+    result = text.islower()
+    print(result)  # Output: False
+    ```
+6. **str.isupper()**:
+    **Definition**: Returns True if all characters in the string are uppercase letters and there is at least one character; otherwise, returns False.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-str.isupper()
-- **Examples**:
+    ```python
+    str.isupper()
+    ```
+    - **Examples**:
 
-```python
-# Example with uppercase letters
-text = "HELLO"
-result = text.isupper()
-print(result)  # Output: True
+    ```python
+    # Example with uppercase letters
+    text = "HELLO"
+    result = text.isupper()
+    print(result)  # Output: True
 
-# Example with mixed case letters
-text = "Hello"
-result = text.isupper()
-print(result)  # Output: False
-7. str.istitle()
-**Definition**: Returns True if the string is in title case (i.e., each word starts with an uppercase letter and all other letters are lowercase); otherwise, returns False.
+    # Example with mixed case letters
+    text = "Hello"
+    result = text.isupper()
+    print(result)  # Output: False
+    ```
+7. **str.istitle()**:
+    **Definition**: Returns True if the string is in title case (i.e., each word starts with an uppercase letter and all other letters are lowercase); otherwise, returns False.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-str.istitle()
-- **Examples**:
+    ```python
+    str.istitle()
+    ```
+    - **Examples**:
 
-```python
-# Example with title case
-text = "This Is A Title"
-result = text.istitle()
-print(result)  # Output: True
+    ```python
+    # Example with title case
+    text = "This Is A Title"
+    result = text.istitle()
+    print(result)  # Output: True
 
-# Example with non-title case
-text = "This is not a Title"
-result = text.istitle()
-print(result)  # Output: False
+    # Example with non-title case
+    text = "This is not a Title"
+    result = text.istitle()
+    print(result)  # Output: False
+    ```
 ## sWAP cASE
 **Definition**: The sWAP cASE problem involves converting all uppercase letters in a string to lowercase and all lowercase letters to uppercase. This transformation should be applied to each character in the string.
 
-Problem Statement
+- **Problem Statement**:
 Given a string, swap the case of each letter. That is, convert all uppercase letters to lowercase and all lowercase letters to uppercase.
 
-Example
+- **Example**:
 Input: "Hello World"
 
 Output: "hELLO wORLD"
@@ -2254,13 +2334,14 @@ Input: "Python Programming"
 
 Output: "pYTHON pROGRAMMING"
 
-Solution
+- **Solution**:
 Method: Use the str.swapcase() method, which is a built-in Python method designed to swap the case of all letters in a string.
 
 - **Syntax**:
 
 ```python
 str.swapcase()
+```
 - **Example**:
 
 ```python
@@ -2273,263 +2354,286 @@ print(result)  # Output: "hELLO wORLD"
 text = "Python Programming"
 result = text.swapcase()
 print(result)  # Output: "pYTHON pROGRAMMING"
-Common Problems
+```
+- **Common Problems**:
     - **Problem**: The input string contains non-alphabetic characters (e.g., digits, punctuation).
 
         - **Solution**: str.swapcase() handles non-alphabetic characters by leaving them unchanged, so no additional handling is required.
     - **Problem**: The input string is empty.
 
         - **Solution**: An empty string will return an empty string when swapcase() is applied.
-Additional Notes
-Performance: The str.swapcase() method is efficient and works in linear time relative to the length of the string.
+- **Additional Notes**:
+    - Performance: The str.swapcase() method is efficient and works in linear time relative to the length of the string.
 
-Alternative: For custom cases or additional processing, you can use a list comprehension or a loop to manually swap cases:
+    - Alternative: For custom cases or additional processing, you can use a list comprehension or a loop to manually swap cases:
 
-```python
-def swap_case_custom(text):
-    return ''.join(c.lower() if c.isupper() else c.upper() for c in text)
+        ```python
+        def swap_case_custom(text):
+            return ''.join(c.lower() if c.isupper() else c.upper() for c in text)
 
-# Example usage
-text = "Hello World"
-result = swap_case_custom(text)
-print(result)  # Output: "hELLO wORLD"
+        # Example usage
+        text = "Hello World"
+        result = swap_case_custom(text)
+        print(result)  # Output: "hELLO wORLD"
+        ```
 
 ## Symmetric Difference
 **Definition**: The symmetric difference between two sets is a set containing elements that are in either of the sets but not in their intersection. In other words, it includes elements that are in one of the sets but not in both.
+- **Syntax**:
+    - Using ^ Operator:
 
-Syntax
-Using ^ Operator:
+    ```python
+    set1 ^ set2
+    ```
+    - Using set.symmetric_difference() Method:
 
-```python
-set1 ^ set2
-Using set.symmetric_difference() Method:
+    ```python
+    set1.symmetric_difference(set2)
+    ```
+- **Examples**:
+    - Basic Example:
 
-```python
-set1.symmetric_difference(set2)
-Examples
-Basic - **Example**:
+        ```python
+        # Define two sets
+        set1 = {1, 2, 3, 4}
+        set2 = {3, 4, 5, 6}
 
-```python
-# Define two sets
-set1 = {1, 2, 3, 4}
-set2 = {3, 4, 5, 6}
+        # Calculate symmetric difference
+        result = set1 ^ set2
+        print(result)  # Output: {1, 2, 5, 6}
 
-# Calculate symmetric difference
-result = set1 ^ set2
-print(result)  # Output: {1, 2, 5, 6}
+        # Using method
+        result = set1.symmetric_difference(set2)
+        print(result)  # Output: {1, 2, 5, 6}
+        ```
+    - Example with Strings:
 
-# Using method
-result = set1.symmetric_difference(set2)
-print(result)  # Output: {1, 2, 5, 6}
-Example with Strings:
+        ```python
+        # Define two sets of characters
+        set1 = {'a', 'b', 'c', 'd'}
+        set2 = {'c', 'd', 'e', 'f'}
 
-```python
-# Define two sets of characters
-set1 = {'a', 'b', 'c', 'd'}
-set2 = {'c', 'd', 'e', 'f'}
+        # Calculate symmetric difference
+        result = set1 ^ set2
+        print(result)  # Output: {'a', 'b', 'e', 'f'}
 
-# Calculate symmetric difference
-result = set1 ^ set2
-print(result)  # Output: {'a', 'b', 'e', 'f'}
-
-# Using method
-result = set1.symmetric_difference(set2)
-print(result)  # Output: {'a', 'b', 'e', 'f'}
-Common Problems
+        # Using method
+        result = set1.symmetric_difference(set2)
+        print(result)  # Output: {'a', 'b', 'e', 'f'}
+        ```
+- **Common Problems**:
     - **Problem**: Incorrect results when the sets contain nested sets or mutable types.
 
         - **Solution**: Ensure that the sets only contain hashable types, as sets themselves cannot be elements of other sets.
     - **Problem**: Misunderstanding the difference between symmetric difference and other set operations like union or difference.
 
         - **Solution**: Understand the **Definition**: symmetric difference is the union of the sets minus their intersection.
-Additional Notes
-Performance: Symmetric difference operations are efficient, typically running in linear time relative to the number of elements in the sets.
+- **Additional Notes**:
+    - Performance: Symmetric difference operations are efficient, typically running in linear time relative to the number of elements in the sets.
 - **Use Cases**: Useful in scenarios where you need to find elements that are unique to each set, such as in comparison tasks or when eliminating common elements.
+
 ## Text Alignment
 **Definition**: Text alignment involves formatting strings so that they are aligned to the left, center, or right within a specified width. This can be achieved using various methods in Python.
 
-1. Using str.ljust(), str.rjust(), and str.center()
-**Definition**: These methods adjust the alignment of a string within a given width, padding it with specified characters if needed.
+1. **Using str.ljust(), str.rjust(), and str.center()**:
+    
+    **Definition**: These methods adjust the alignment of a string within a given width, padding it with specified characters if needed.
 
-str.ljust(width, fillchar): Left-aligns the string within the given width, padding with fillchar (default is a space).
+    - str.ljust(width, fillchar): Left-aligns the string within the given width, padding with fillchar (default is a space).
 
-- **Syntax**:
+        - **Syntax**:
 
-```python
-str.ljust(width, fillchar)
-- **Example**:
+                ```python
+                str.ljust(width, fillchar)
+                ```
+        - **Example**:
 
-```python
-text = "Hello"
-result = text.ljust(10, '-')
-print(result)  # Output: 'Hello-----'
-str.rjust(width, fillchar): Right-aligns the string within the given width, padding with fillchar (default is a space).
+                ```python
+                text = "Hello"
+                result = text.ljust(10, '-')
+                print(result)  # Output: 'Hello-----'
+                ```
+    - str.rjust(width, fillchar): Right-aligns the string within the given width, padding with fillchar (default is a space).
 
-- **Syntax**:
+        - **Syntax**:
 
-```python
-str.rjust(width, fillchar)
-- **Example**:
+        ```python
+        str.rjust(width, fillchar)
+        ```
+        - **Example**:
 
-```python
-text = "Hello"
-result = text.rjust(10, '-')
-print(result)  # Output: '-----Hello'
-str.center(width, fillchar): Centers the string within the given width, padding with fillchar (default is a space).
+        ```python
+        text = "Hello"
+        result = text.rjust(10, '-')
+        print(result)  # Output: '-----Hello'
+        ```
+    - str.center(width, fillchar): Centers the string within the given width, padding with fillchar (default is a space).
 
-- **Syntax**:
+        - **Syntax**:
 
-```python
-str.center(width, fillchar)
-- **Example**:
+        ```python
+        str.center(width, fillchar)
+        ```
+        - **Example**:
 
-```python
-text = "Hello"
-result = text.center(10, '-')
-print(result)  # Output: '--Hello---'
-2. Using f-strings (Python 3.6+)
-**Definition**: F-strings allow for inline text alignment within formatted strings by using format specifiers.
+        ```python
+        text = "Hello"
+        result = text.center(10, '-')
+        print(result)  # Output: '--Hello---'
+        ```
+2. **Using f-strings (Python 3.6+)**:
+    **Definition**: F-strings allow for inline text alignment within formatted strings by using format specifiers.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-f"{value:alignment_width}"
-alignment_width: Specifies the width of the field and the alignment.
-- **Examples**:
+    ```python
+    f"{value:alignment_width}"
+    ```
+    - alignment_width: Specifies the width of the field and the alignment.
+    - **Examples**:
 
-```python
-# Left alignment
-text = "Hello"
-print(f"{text:<10}")  # Output: 'Hello     '
+    ```python
+    # Left alignment
+    text = "Hello"
+    print(f"{text:<10}")  # Output: 'Hello     '
 
-# Right alignment
-text = "Hello"
-print(f"{text:>10}")  # Output: '     Hello'
+    # Right alignment
+    text = "Hello"
+    print(f"{text:>10}")  # Output: '     Hello'
 
-# Center alignment
-text = "Hello"
-print(f"{text:^10}")  # Output: '  Hello   '
-3. Using str.format()
-**Definition**: The str.format() method provides another way to format strings with alignment options.
+    # Center alignment
+    text = "Hello"
+    print(f"{text:^10}")  # Output: '  Hello   '
+    ```
+3. **Using str.format()**:
+    **Definition**: The str.format() method provides another way to format strings with alignment options.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-"{value:alignment_width}"
-alignment_width: Specifies the width and alignment of the field.
-- **Examples**:
+    ```python
+    "{value:alignment_width}"
+    ```
+    - alignment_width: Specifies the width and alignment of the field.
+    - **Examples**:
 
-```python
-# Left alignment
-text = "Hello"
-print("{:<10}".format(text))  # Output: 'Hello     '
+    ```python
+    # Left alignment
+    text = "Hello"
+    print("{:<10}".format(text))  # Output: 'Hello     '
 
-# Right alignment
-text = "Hello"
-print("{:>10}".format(text))  # Output: '     Hello'
+    # Right alignment
+    text = "Hello"
+    print("{:>10}".format(text))  # Output: '     Hello'
 
-# Center alignment
-text = "Hello"
-print("{:^10}".format(text))  # Output: '  Hello   '
-Common Problems
+    # Center alignment
+    text = "Hello"
+    print("{:^10}".format(text))  # Output: '  Hello   '
+    ```
+- **Common Problems**:
     - **Problem**: Alignment not working as expected with non-string data types.
 
         - **Solution**: Convert non-string types to strings before applying alignment.
     - **Problem**: Unexpected padding characters or widths.
 
         - **Solution**: Ensure that the width and padding characters are specified correctly according to the formatting method used.
-Additional Notes
-Performance: Alignment methods are efficient and typically run in linear time relative to the string length.
+- **Additional Notes**:
+- Performance: Alignment methods are efficient and typically run in linear time relative to the string length.
 - **Use Cases**: Text alignment is useful for creating neatly formatted outputs, such as in tables, reports, and user interfaces.
 
 ## Text Wrap
 **Definition**: Text wrapping involves breaking a long string into multiple lines so that each line does not exceed a specified width. This is useful for formatting text in a readable way.
 
-Using textwrap Module
-The textwrap module provides functions to format and wrap text.
+- **Using textwrap Module**:
+    The textwrap module provides functions to format and wrap text.
 
-1. textwrap.wrap()
+    1. **textwrap.wrap()**:
 
-**Definition**: Wraps the input text into a list of lines, each of which is no longer than a given width.
+    **Definition**: Wraps the input text into a list of lines, each of which is no longer than a given width.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-import textwrap
-textwrap.wrap(text, width, **kwargs)
-text: The input string to be wrapped.
-width: The maximum width of each line.
-- **Examples**:
+    ```python
+    import textwrap
+    textwrap.wrap(text, width, **kwargs)
+    ```
+        - text: The input string to be wrapped.
+        - width: The maximum width of each line.
+    - **Examples**:
 
-```python
-import textwrap
+    ```python
+    import textwrap
 
-text = "This is a long line of text that needs to be wrapped according to the specified width."
-wrapped_text = textwrap.wrap(text, width=20)
-print(wrapped_text)
-# Output: ['This is a long line', 'of text that needs', 'to be wrapped according', 'to the specified width.']
-2. textwrap.fill()
+    text = "This is a long line of text that needs to be wrapped according to the specified width."
+    wrapped_text = textwrap.wrap(text, width=20)
+    print(wrapped_text)
+    # Output: ['This is a long line', 'of text that needs', 'to be wrapped according', 'to the specified width.']
+    ```
+    2. textwrap.fill()
 
-**Definition**: Wraps the input text into a single string with line breaks, ensuring each line does not exceed the given width.
+    **Definition**: Wraps the input text into a single string with line breaks, ensuring each line does not exceed the given width.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-import textwrap
-textwrap.fill(text, width, **kwargs)
-text: The input string to be wrapped.
-width: The maximum width of each line.
-- **Examples**:
+    ```python
+    import textwrap
+    textwrap.fill(text, width, **kwargs)
+    ```
+        - text: The input string to be wrapped.
+        - width: The maximum width of each line.
+    - **Examples**:
 
-```python
-import textwrap
+    ```python
+    import textwrap
 
-text = "This is a long line of text that needs to be wrapped according to the specified width."
-filled_text = textwrap.fill(text, width=20)
-print(filled_text)
-# - **Output**:
-# This is a long line
-# of text that needs
-# to be wrapped according
-# to the specified width.
-3. textwrap.shorten()
+    text = "This is a long line of text that needs to be wrapped according to the specified width."
+    filled_text = textwrap.fill(text, width=20)
+    print(filled_text)
+    # - **Output**:
+    # This is a long line
+    # of text that needs
+    # to be wrapped according
+    # to the specified width.
+    ```
+    3. textwrap.shorten()
 
-**Definition**: Shortens a string to fit within a given width, appending an ellipsis (...) if necessary.
+    **Definition**: Shortens a string to fit within a given width, appending an ellipsis (...) if necessary.
 
-- **Syntax**:
+    - **Syntax**:
 
-```python
-import textwrap
-textwrap.shorten(text, width, **kwargs)
-text: The input string to be shortened.
-width: The maximum width of the shortened text.
-- **Examples**:
+    ```python
+    import textwrap
+    textwrap.shorten(text, width, **kwargs)
+    ```
+        - text: The input string to be shortened.
+        - width: The maximum width of the shortened text.
+    - **Examples**:
 
-```python
-import textwrap
+    ```python
+    import textwrap
 
-text = "This is a long line of text that will be shortened."
-shortened_text = textwrap.shorten(text, width=30, placeholder="...")
-print(shortened_text)
-# Output: 'This is a long line of text...'
-Common Problems
+    text = "This is a long line of text that will be shortened."
+    shortened_text = textwrap.shorten(text, width=30, placeholder="...")
+    print(shortened_text)
+    # Output: 'This is a long line of text...'
+    ```
+- **Common Problems**:
     - **Problem**: Lines are cut off in the middle of words.
 
         - **Solution**: Ensure the width is set to a value that avoids cutting words or use textwrap.wrap() for more control.
     - **Problem**: Text is not wrapped properly due to special characters or formatting.
 
         - **Solution**: Clean the text before wrapping if special characters are causing issues.
-Additional Notes
+- **Additional Notes**:
 Performance: Wrapping functions are efficient and typically handle text in linear time relative to its length.
 - **Use Cases**: Useful for formatting text output, such as in console applications, reports, and text-based user interfaces.
 
 ## The Captain's Room
 **Definition**: In a list where every element appears twice except for one unique element, find the unique element. This problem tests your ability to handle lists and understand how to identify unique items among duplicates.
 
-Problem Statement
+- **Problem Statement**:
 You are given a list of integers where every integer appears exactly twice, except for one integer which appears only once. Your task is to identify that unique integer.
 
-Example
+- **Example**:
 Input: [1, 2, 3, 2, 1]
 
 Output: 3
@@ -2538,317 +2642,344 @@ Input: [4, 5, 6, 4, 5]
 
 Output: 6
 
-Solution
-Method 1: Using Set
+- **Solution**:
+    - **Method 1: Using Set**:
 
-**Definition**: Use a set to track occurrences and identify the unique integer.
+        **Definition**: Use a set to track occurrences and identify the unique integer.
 
-Algorithm:
+        - **Algorithm**:
 
-Initialize an empty set.
-Iterate through the list.
-Add each item to the set if it is not already present, or remove it if it is.
-The remaining item in the set is the unique integer.
-Python Code:
+        - Initialize an empty set.
+        - Iterate through the list.
+        - Add each item to the set if it is not already present, or remove it if it is.
+        - The remaining item in the set is the unique integer.
+        - **Python Code**:
 
-```python
-def find_unique_room(rooms):
-    unique = set()
-    for room in rooms:
-        if room in unique:
-            unique.remove(room)
-        else:
-            unique.add(room)
-    return unique.pop()
+        ```python
+        def find_unique_room(rooms):
+            unique = set()
+            for room in rooms:
+                if room in unique:
+                    unique.remove(room)
+                else:
+                    unique.add(room)
+            return unique.pop()
+        
 
-# Example usage
-rooms = [1, 2, 3, 2, 1]
-print(find_unique_room(rooms))  # Output: 3
-Method 2: Using XOR Operation
+        # Example usage
+        rooms = [1, 2, 3, 2, 1]
+        print(find_unique_room(rooms))  # Output: 3
+        ```
+    - **Method 2: Using XOR Operation**:
 
-**Definition**: Use the XOR bitwise operation, which has the property that a ^ a = 0 and a ^ 0 = a. Thus, XOR-ing all elements will cancel out the duplicates and leave the unique element.
+        **Definition**: Use the XOR bitwise operation, which has the property that a ^ a = 0 and a ^ 0 = a. Thus, XOR-ing all elements will cancel out the duplicates and leave the unique element.
 
-Algorithm:
+        - **Algorithm**:
 
-Initialize a variable to 0.
-XOR each item in the list with the variable.
-The result will be the unique integer.
-Python Code:
+        - Initialize a variable to 0.
+        - XOR each item in the list with the variable.
+        - The result will be the unique integer.
+        
+        - **Python Code**:
 
-```python
-def find_unique_room(rooms):
-    unique = 0
-    for room in rooms:
-        unique ^= room
-    return unique
+        ```python
+        def find_unique_room(rooms):
+            unique = 0
+            for room in rooms:
+                unique ^= room
+            return unique
 
-# Example usage
-rooms = [1, 2, 3, 2, 1]
-print(find_unique_room(rooms))  # Output: 3
-Common Problems
+        # Example usage
+        rooms = [1, 2, 3, 2, 1]
+        print(find_unique_room(rooms))  # Output: 3
+        ```
+- **Common Problems**:
     - **Problem**: Handling an empty list or a list where no integer appears exactly twice.
 
         - **Solution**: Ensure that the problem constraints are met before applying the solution. For an empty list or invalid input, handle appropriately with error messages or defaults.
     - **Problem**: Performance issues with very large lists.
 
         - **Solution**: Both methods provided are efficient, but ensure that the solution is applied correctly with a time complexity of O(n) and space complexity of O(1) for XOR method.
-Additional Notes
+- **Additional Notes**:
 Performance: Both methods are efficient with time complexity O(n) and space complexity O(1) for the XOR method. The set method has a space complexity of O(n).
 - **Use Cases**: Useful for problems involving unique identification among duplicates, such as inventory management, data deduplication, and more.
 ## The Minion Game
 **Definition**: The Minion Game is a game involving two players, Kevin and Stuart, who compete to score points by creating substrings from a given string. Kevin scores points with substrings starting with vowels, while Stuart scores with substrings starting with consonants. The player with the highest score wins.
 
-Problem Statement
+- **Problem Statement**
 Given a string S, calculate the scores for both players:
 
 Kevin scores by counting substrings that start with a vowel.
 Stuart scores by counting substrings that start with a consonant.
 Determine the winner based on the scores.
 
-Example
+- **Example**:
 Input: "BANANA"
 - **Output**:
 Kevin's Score: 9 (Substrings starting with vowels: A, A, A, AN, ANA, ANAN, ANANA, ANA, ANANA)
 Stuart's Score: 12 (Substrings starting with consonants: B, BAN, BANA, BANAN, BANANA, N, NA, NAN, NANA, AN, ANAN, ANANA)
 Result: Stuart 12 Kevin 9 Stuart
-Solution
-Algorithm:
+- **Solution**:
+    - **Algorithm**:
 
-Initialize Scores: Start with scores of 0 for both players.
-Iterate through String: For each character in the string, determine if it is a vowel or a consonant.
-Calculate Scores:
-For each vowel at position i, there are len(S) - i substrings starting with that vowel.
-For each consonant at position i, there are len(S) - i substrings starting with that consonant.
-Compare Scores: Print the player with the highest score, or if scores are tied, print "Draw".
-Python Code:
-```python
-def minion_game(S):
-    vowels = "AEIOU"
-    kevin_score = 0
-    stuart_score = 0
-    length = len(S)
-    
-    for i in range(length):
-        if S[i] in vowels:
-            kevin_score += length - i
+    - Initialize Scores: Start with scores of 0 for both players.
+    - Iterate through String: For each character in the string, determine if it is a vowel or a consonant.
+    - Calculate Scores:
+        - For each vowel at position i, there are len(S) - i substrings starting with that vowel.
+        - For each consonant at position i, there are len(S) - i substrings starting with that consonant.
+    - Compare Scores: Print the player with the highest score, or if scores are tied, print "Draw".
+    - **Python Code**:
+    ```python
+    def minion_game(S):
+        vowels = "AEIOU"
+        kevin_score = 0
+        stuart_score = 0
+        length = len(S)
+        
+        for i in range(length):
+            if S[i] in vowels:
+                kevin_score += length - i
+            else:
+                stuart_score += length - i
+        
+        if kevin_score > stuart_score:
+            print("Kevin", kevin_score)
+        elif stuart_score > kevin_score:
+            print("Stuart", stuart_score)
         else:
-            stuart_score += length - i
-    
-    if kevin_score > stuart_score:
-        print("Kevin", kevin_score)
-    elif stuart_score > kevin_score:
-        print("Stuart", stuart_score)
-    else:
-        print("Draw")
+            print("Draw")
 
-# Example usage
-minion_game("BANANA")
-Common Problems
+        # Example usage
+        minion_game("BANANA")
+        ```
+- **Common Problems**:
     - **Problem**: Incorrect score calculation due to not accounting for all possible substrings.
 
         - **Solution**: Ensure that for each character, you correctly count the number of substrings starting from that character to the end of the string.
     - **Problem**: Handling large strings efficiently.
 
         - **Solution**: The algorithm runs in O(n) time complexity, which is efficient for large strings.
-Additional Notes
+- **Additional Notes**:
 Performance: The solution provided runs in linear time, O(n), where n is the length of the string. This is optimal for this type of problem.
 - **Use Cases**: Useful for understanding substring operations, game scoring algorithms, and performance optimization in competitive programming.
 ## Tuples
 **Definition**: A tuple is an immutable sequence type in Python, used to store a collection of items. Unlike lists, tuples cannot be modified after creation, making them useful for fixed data collections.
 
-Syntax
-Creating a Tuple:
+- **Syntax**:
+    - Creating a Tuple:
 
-```python
-my_tuple = (1, 2, 3, 4)
-Creating a Tuple with One Item:
+    ```python
+    my_tuple = (1, 2, 3, 4)
+    ```
+    - Creating a Tuple with One Item:
 
-```python
-single_item_tuple = (1,)  # Note the comma
-Creating an Empty Tuple:
+    ```python
+    single_item_tuple = (1,)  # Note the comma
+    ```
+    - Creating an Empty Tuple:
 
-```python
-empty_tuple = ()
-Examples
-Basic Tuple:
+    ```python
+    empty_tuple = ()
+    ```
+- **Example**:s
+    - Basic Tuple:
 
-```python
-my_tuple = (1, 2, 3, 4)
-print(my_tuple)  # Output: (1, 2, 3, 4)
-- Accessing Elements:
+    ```python
+    my_tuple = (1, 2, 3, 4)
+    print(my_tuple)  # Output: (1, 2, 3, 4)
+    ```
+    - Accessing Elements:
 
-```python
-my_tuple = (1, 2, 3, 4)
-print(my_tuple[0])  # Output: 1
-Slicing Tuples:
+    ```python
+    my_tuple = (1, 2, 3, 4)
+    print(my_tuple[0])  # Output: 1
+    ```
+    - Slicing Tuples:
 
-```python
-my_tuple = (1, 2, 3, 4, 5)
-print(my_tuple[1:4])  # Output: (2, 3, 4)
-Nested Tuples:
+    ```python
+    my_tuple = (1, 2, 3, 4, 5)
+    print(my_tuple[1:4])  # Output: (2, 3, 4)
+    ```
+    - Nested Tuples:
 
-```python
-nested_tuple = (1, (2, 3), 4)
-print(nested_tuple[1])  # Output: (2, 3)
-Tuple Unpacking:
+    ```python
+    nested_tuple = (1, (2, 3), 4)
+    print(nested_tuple[1])  # Output: (2, 3)
+    ```
+    - Tuple Unpacking:
 
-```python
-my_tuple = (1, 2, 3)
-a, b, c = my_tuple
-print(a, b, c)  # Output: 1 2 3
-Concatenating Tuples:
+    ```python
+    my_tuple = (1, 2, 3)
+    a, b, c = my_tuple
+    print(a, b, c)  # Output: 1 2 3
+    ```
+    - Concatenating Tuples:
 
-```python
-tuple1 = (1, 2, 3)
-tuple2 = (4, 5, 6)
-combined_tuple = tuple1 + tuple2
-print(combined_tuple)  # Output: (1, 2, 3, 4, 5, 6)
-Repeating Tuples:
+    ```python
+    tuple1 = (1, 2, 3)
+    tuple2 = (4, 5, 6)
+    combined_tuple = tuple1 + tuple2
+    print(combined_tuple)  # Output: (1, 2, 3, 4, 5, 6)
+    ```
+    - Repeating Tuples:
 
-```python
-my_tuple = (1, 2, 3)
-repeated_tuple = my_tuple * 3
-print(repeated_tuple)  # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3)
-Common Operations
-Length of a Tuple:
+    ```python
+    my_tuple = (1, 2, 3)
+    repeated_tuple = my_tuple * 3
+    print(repeated_tuple)  # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3)
+    ```
+- **Common Operations**:
+    - Length of a Tuple:
 
-```python
-my_tuple = (1, 2, 3, 4)
-length = len(my_tuple)
-print(length)  # Output: 4
-Check Membership:
+    ```python
+    my_tuple = (1, 2, 3, 4)
+    length = len(my_tuple)
+    print(length)  # Output: 4
+    ```
+    - Check Membership:
 
-```python
-my_tuple = (1, 2, 3, 4)
-print(2 in my_tuple)  # Output: True
-Index of an Element:
+    ```python
+    my_tuple = (1, 2, 3, 4)
+    print(2 in my_tuple)  # Output: True
+    ```
+    - Index of an Element:
 
-```python
-my_tuple = (1, 2, 3, 4)
-index = my_tuple.index(3)
-print(index)  # Output: 2
-Count of an Element:
+    ```python
+    my_tuple = (1, 2, 3, 4)
+    index = my_tuple.index(3)
+    print(index)  # Output: 2
+    ```
+    - Count of an Element:
 
-```python
-my_tuple = (1, 2, 3, 2, 2)
-count = my_tuple.count(2)
-print(count)  # Output: 3
-Common Problems
+    ```python
+    my_tuple = (1, 2, 3, 2, 2)
+    count = my_tuple.count(2)
+    print(count)  # Output: 3
+    ```
+- **Common Problems**:
     - **Problem**: Trying to modify elements of a tuple.
 
         - **Solution**: Remember that tuples are immutable. To modify a tuple, create a new tuple with the desired changes.
     - **Problem**: Incorrectly creating a single-item tuple (missing comma).
 
         - **Solution**: Always include a comma when creating a single-item tuple.
-Additional Notes
+- **Additional Notes**:
 Immutability: Tuples are immutable, meaning once they are created, their elements cannot be changed, added, or removed.
 - **Use Cases**: Tuples are often used for fixed collections of items, such as function return values, or in situations where immutability is required.
 ## What's Your Name
 **Definition**: The "What's Your Name" problem is a simple exercise in string manipulation where you need to format a string that consists of a person's first and last names, and then print a greeting using these names.
 
-Problem Statement
+- **Problem Statement**
 You are given two strings: the first name and the last name. Your task is to format and print a greeting that includes both names.
 
-Input:
+- **Input**:
 
 Two strings: firstName and lastName
 - **Output**:
 
 A formatted greeting: "Hello {firstName} {lastName}! You just delved into python."
-Example
-Input:
+- **Example**:
+    - **Input**:
 
-```python
-firstName = "John"
-lastName = "Doe"
-- **Output**:
+    ```python
+    firstName = "John"
+    lastName = "Doe"
+    ```
+    - **Output**:
 
-```python
-Hello John Doe! You just delved into python.
-Solution
-Algorithm:
+    ```python
+    Hello John Doe! You just delved into python.
+    ```
+- **Solution**:
+    - **Algorithm**:
 
-Read Input: Read the input strings for first name and last name.
-Format Greeting: Use string formatting to create the greeting message.
-Print Greeting: Output the formatted greeting.
-Python Code:
-```python
-def print_greeting(first_name, last_name):
-    greeting = f"Hello {first_name} {last_name}! You just delved into python."
-    print(greeting)
+        - Read Input: Read the input strings for first name and last name.
+        - Format Greeting: Use string formatting to create the greeting message.
+        - Print Greeting: Output the formatted greeting.
+    - **Python Code**:
+    ```python
+    def print_greeting(first_name, last_name):
+        greeting = f"Hello {first_name} {last_name}! You just delved into python."
+        print(greeting)
 
-# Example usage
-first_name = "John"
-last_name = "Doe"
-print_greeting(first_name, last_name)
-Common Problems
+    # Example usage
+    first_name = "John"
+    last_name = "Doe"
+    print_greeting(first_name, last_name)
+    ```
+- **Common Problems**:
     - **Problem**: Incorrect string formatting.
 
         - **Solution**: Ensure you use the correct string formatting method. In Python, f-strings or str.format() can be used to insert variables into strings.
     - **Problem**: Input is not handled correctly.
 
         - **Solution**: Make sure that input strings are read and handled correctly before formatting them into the output.
-Additional Notes
+- **Additional Notes**:
 Performance: This problem is straightforward and performs in constant time O(1), as it involves simple string operations.
 - **Use Cases**: Useful for practicing basic string manipulation and formatting in Python.
 ## Write a function
 **Definition**: The "Write a Function" problem involves implementing a function to determine if a given string is a valid identifier according to specific rules. This problem typically tests your understanding of string manipulation and validation in Python.
 
-Problem Statement
+- **Problem Statement**
 You need to write a function to determine if a given string is a valid identifier. According to the problem's rules, the string should be:
 
 A non-empty string.
 Contain only alphabetic characters and underscores (_).
 Start with an alphabetic character or an underscore, but not a digit.
-Input:
+- **Input**:
 
 A single string: s
 - **Output**:
 
 True if the string is a valid identifier.
 False otherwise.
-Example
-Input:
+- **Example**:
+- **Input**:
 
 ```python
 s = "var_name"
+```
 - **Output**:
 
 ```python
 True
-Input:
+```
+- **Input**:
 
 ```python
 s = "1var_name"
+```
 - **Output**:
 
 ```python
 False
-Solution
-Algorithm:
+```
+- **Solution**:
+    - **Algorithm**:
 
-Check if the string is non-empty.
-Verify that the first character is not a digit.
-Ensure all characters in the string are either alphabetic or underscores.
-Python Code:
-```python
-def is_valid_identifier(s):
-    if not s:
-        return False
-    if not s[0].isalpha() and s[0] != '_':
-        return False
-    return all(c.isalpha() or c == '_' for c in s)
+        - Check if the string is non-empty.
+        - Verify that the first character is not a digit.
+        - Ensure all characters in the string are either alphabetic or underscores.
+    - **Python Code**:
+    ```python
+    def is_valid_identifier(s):
+        if not s:
+            return False
+        if not s[0].isalpha() and s[0] != '_':
+            return False
+        return all(c.isalpha() or c == '_' for c in s)
 
-# Example usage
-print(is_valid_identifier("var_name"))  # Output: True
-print(is_valid_identifier("1var_name")) # Output: False
-Common Problems
+    # Example usage
+    print(is_valid_identifier("var_name"))  # Output: True
+    print(is_valid_identifier("1var_name")) # Output: False
+    ```
+- **Common Problems**:
     - **Problem**: Handling empty strings or strings that start with digits.
 
         - **Solution**: Check if the string is empty and if the first character is a valid starting character (alphabet or underscore).
     - **Problem**: Strings containing invalid characters.
 
         - **Solution**: Ensure that all characters in the string are either alphabetic or underscores.
-Additional Notes
+- **Additional Notes**:
 Performance: This solution is efficient with time complexity O(n), where n is the length of the string, due to the need to check each character.
 - **Use Cases**: Useful for validating identifiers in programming languages, variable names, or other scenarios where specific naming conventions are required.
