@@ -218,7 +218,9 @@ def print_door_mat(n, m):
     for i in range(n-2, 0, -2):
         print((pattern * i).center(m, '-'))
 
-# Example usage
+``` 
+- Example:
+```python
 print_door_mat(7, 21)
 ```
 - **Output**:
@@ -311,7 +313,9 @@ def find_runner_up(scores):
     unique_scores.sort()  # Sort the unique scores in ascending order
     return unique_scores[-2]  # Return the second last element (runner-up)
 
-# Example usage
+``` 
+- Example:
+```python
 scores = [2, 3, 6, 6, 5]
 print(find_runner_up(scores))  # Output: 5
 ```
@@ -347,7 +351,9 @@ def calculate_percentage(part, total):
         raise ValueError("Total cannot be zero.")
     return (part / total) * 100
 
-# Example usage
+``` 
+- Example:
+```python
 part = 45
 total = 200
 print(calculate_percentage(part, total))  # Output: 22.5
@@ -2371,7 +2377,9 @@ print(result)  # Output: "pYTHON pROGRAMMING"
         def swap_case_custom(text):
             return ''.join(c.lower() if c.isupper() else c.upper() for c in text)
 
-        # Example usage
+        ``` 
+    - Example:
+    ```python
         text = "Hello World"
         result = swap_case_custom(text)
         print(result)  # Output: "hELLO wORLD"
@@ -2666,7 +2674,9 @@ Output: 6
             return unique.pop()
         
 
-        # Example usage
+        ``` 
+    - Example:
+    ```python
         rooms = [1, 2, 3, 2, 1]
         print(find_unique_room(rooms))  # Output: 3
         ```
@@ -2689,7 +2699,9 @@ Output: 6
                 unique ^= room
             return unique
 
-        # Example usage
+        ``` 
+        - Example:
+        ```python
         rooms = [1, 2, 3, 2, 1]
         print(find_unique_room(rooms))  # Output: 3
         ```
@@ -2749,7 +2761,9 @@ Result: Stuart 12 Kevin 9 Stuart
         else:
             print("Draw")
 
-        # Example usage
+        ```
+    - Example:
+    ```python
         minion_game("BANANA")
         ```
 - **Common Problems**:
@@ -2902,7 +2916,9 @@ A formatted greeting: "Hello {firstName} {lastName}! You just delved into python
         greeting = f"Hello {first_name} {last_name}! You just delved into python."
         print(greeting)
 
-    # Example usage
+    ``` 
+    - Example:
+    ```python
     first_name = "John"
     last_name = "Doe"
     print_greeting(first_name, last_name)
@@ -2968,8 +2984,9 @@ False
         if not s[0].isalpha() and s[0] != '_':
             return False
         return all(c.isalpha() or c == '_' for c in s)
-
-    # Example usage
+    ``` 
+- Example:
+    ```python
     print(is_valid_identifier("var_name"))  # Output: True
     print(is_valid_identifier("1var_name")) # Output: False
     ```
