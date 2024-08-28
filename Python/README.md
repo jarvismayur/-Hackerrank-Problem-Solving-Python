@@ -1,5 +1,7 @@
 # Python
-
+| Concept              | Hackerrank Problem                                         | Difficulty | Time Complexity | Space Complexity | Score |
+|----------------------|------------------------------------------------------------|------------|-----------------|------------------|-------|
+| [List Comprehension](list-comprehension)     | [List Comprehension](https://www.hackerrank.com/challenges/list-comprehensions/problem) | Easy       | O(n)            | O(n)             | 10    |
 
 
 ## Alphabet Rangoli
