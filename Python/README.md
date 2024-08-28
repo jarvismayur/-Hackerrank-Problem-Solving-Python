@@ -14,7 +14,6 @@ Create a Rangoli of size n, where n represents the number of rows and columns in
 
 - **Example**:
 ```python
-Copy code
 def print_rangoli(size):
     # your code goes here
     # Define the alphabet
@@ -42,7 +41,6 @@ def print_rangoli(size):
 
 - **Output**:
 ```css
-Copy code
 --------e--------
 ------e-d-e------
 ----e-d-c-d-e----
