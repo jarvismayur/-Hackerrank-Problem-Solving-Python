@@ -76,7 +76,7 @@ List of available documentation with there current status:
 
 | Topic | Link | Status |
 |-------|------|--------|
-| Algorithms| [link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/README.md)| Created | 
+| Algorithms| [link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/README.md)| Created and in Progress | 
 | Python | [link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Python/README.md)| Created and Upto Date |
 | SQL | [link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/SQL/README.md) | Created |
 
