@@ -1262,6 +1262,66 @@ print(count)
 
 
 ## Polar Coordinates
+**Definition**: The "Polar Coordinates" problem involves converting a complex number into its polar coordinate components: the magnitude (or modulus) and the phase angle (or argument). This problem helps you practice using Python’s complex number functions and understanding polar coordinate representation.
+
+- **Problem Statement**
+You are given a complex number z. Your task is to print the magnitude and phase angle of z in two separate lines.
+
+- Input:
+```
+A single line containing a complex number z in the form of x + yj, where x and y are real numbers.
+```
+- Output:
+```
+Print the magnitude (modulus) of z.
+Print the phase angle (argument) of z.
+```
+- **Example**
+- Input:
+
+```python
+z = "1+2j"
+```
+- Output:
+
+```python
+2.23606797749979
+1.1071487177940904
+```
+- **Solution**
+    - Algorithm:
+
+        - Parse the Input: Read the complex number.
+        - Calculate Magnitude: Use abs() to compute the magnitude (modulus) of the complex number.
+        - Calculate Phase Angle: Use cmath.phase() to compute the phase angle (argument) of the complex number.
+        - Print Results: Print the magnitude on the first line and the phase angle on the second line.
+- **Python Code**:
+```python
+import cmath
+
+def polar_coordinates(z):
+    magnitude = abs(z)
+    phase_angle = cmath.phase(z)
+    print(magnitude)
+    print(phase_angle)
+
+# Example usage
+z = complex(input())  # Example input: "1+2j"
+polar_coordinates(z)
+```
+- **Common Problems**
+    - **Problem**: Incorrect parsing of the complex number.
+        - **Solution**: Ensure that the input is correctly interpreted as a complex number using the complex() function.
+
+    - **Problem**: Incorrect computation of the phase angle.
+        - **Solution**: Use the cmath.phase() function to accurately calculate the phase angle.
+- **Additional Notes**
+    - Mathematical Concepts:
+        Magnitude (Modulus): The distance from the origin to the point represented by the complex number in the complex plane. Calculated as sqrt(x^2 + y^2).
+        Phase Angle (Argument): The angle between the positive real axis and the line representing the complex number in the complex plane.
+    - Libraries: The cmath module in Python provides the necessary functions to work with complex numbers and compute their polar coordinates.
+    - Performance: The solution operates in constant time, O(1), since it only involves basic mathematical operations.
+
 
 ## Print Function
 **Definition**: The print() function in Python is used to output data to the console. It can handle various types of data, including strings, numbers, and more complex data structures.
