@@ -59,18 +59,18 @@ Each folder contains Python files corresponding to the problems under that categ
 
 Each folder in this repository includes a README.md file that provides detailed documentation for the problems within that category. The documentation is structured to enhance your understanding of the key concepts, syntax, and common challenges associated with each problem. Below is an overview of the content you'll find:
 
-- Concept Overview: A clear definition of the topic or problem area.
-- Syntax Guide: Detailed syntax for key operations and methods.
-- Examples: Practical examples to illustrate the concepts.
-- Common Issues & Solutions: Troubleshooting for typical problems you might encounter.
-- Patterns & Best Practices: Insights into recurring patterns and how to approach them.
-- Input & Output Specifications: Guidelines on expected inputs and outputs.
-- Methods & Functions: A list of essential methods and their uses.
-- Formulas & Calculations: Relevant formulas and computational details.
-- Key Characteristics: Important attributes and properties of the concepts.
-- Use Cases: Real-world applications and scenarios.
-- Available Operations: Overview of operations you can perform within this topic.
-- Additional Resources: Extra tips, tricks, and insights.
+- **Concept Overview**: A clear definition of the topic or problem area.
+- **Syntax Guide**: Detailed syntax for key operations and methods.
+- **Examples**: Practical examples to illustrate the concepts.
+- **Common Issues & Solutions**: Troubleshooting for typical problems you might encounter.
+- **Patterns & Best Practices**: Insights into recurring patterns and how to approach them.
+- **Input & Output Specifications**: Guidelines on expected inputs and outputs.
+- **Methods & Functions**: A list of essential methods and their uses.
+- **Formulas & Calculations**: Relevant formulas and computational details.
+- **Key Characteristics**: Important attributes and properties of the concepts.
+- **Use Cases**: Real-world applications and scenarios.
+- **Available Operations**: Overview of operations you can perform within this topic.
+- **Additional Resources**: Extra tips, tricks, and insights.
 
 List of available documentation with there current status: 
 
