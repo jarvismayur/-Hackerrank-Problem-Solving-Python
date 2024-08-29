@@ -4,13 +4,15 @@ Welcome to the **Hackerrank Problems Solutions** repository! This repository con
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Structure](#structure)
-- [Documentation](#documentation)
-- [Getting Started](#getting-started)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+- [Hackerrank Problems Solutions](#hackerrank-problems-solutions)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Structure](#structure)
+  - [Documentation](#documentation)
+  - [Getting Started](#getting-started)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Contact](#contact)
 
 ## Introduction
 
@@ -106,7 +108,7 @@ To run any of the solutions locally, you'll need to have Python installed. Follo
    Navigate to the appropriate directory and run the Python file corresponding to the problem you want to check:
 
    ```bash
-   python Algorithms/ProblemName1.py
+   python Algorithms/ProblemName/ProblemName1.py
    ```
 
 ## Contributing
