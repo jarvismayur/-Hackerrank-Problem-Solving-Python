@@ -1,6 +1,5 @@
 # Python
 
-[Python](#python)
 - [Python](#python)
   - [Alphabet Rangoli-](#alphabet-rangoli-)
   - [Arithmetic Operators](#arithmetic-operators)
