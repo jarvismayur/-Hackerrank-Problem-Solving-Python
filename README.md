@@ -24,19 +24,28 @@ The repository is structured as follows:
 Hackerrank-Python-Solutions/
 │
 ├── Algorithms/
-│   ├── ProblemName1.py
-│   ├── ProblemName2.py
+│   ├── ProblemName1
+│   │    └── ProblemName1.py
+│   ├── ProblemName2
+│   │    └── ProblemName2.py
 │   └── ...
+│   └── README.md
 │
 ├── Python/
-│   ├── ProblemName1.py
-│   ├── ProblemName2.py
+│   ├── ProblemName1
+│   │    └── ProblemName1.py
+│   ├── ProblemName2
+│   │    └── ProblemName2.py
 │   └── ...
+│   └── README.md
 │
 ├── SQL/
-│   ├── ProblemName1.sql
-│   ├── ProblemName2.sql
+│   ├── ProblemName1
+│   │    └── ProblemName1.sql
+│   ├── ProblemName2
+│   │    └── ProblemName2.sql
 │   └── ...
+│   └── README.md
 │
 ├── README.md
 └── requirements.txt
@@ -46,7 +55,28 @@ Each folder contains Python files corresponding to the problems under that categ
 
 ## Documentation
 
-Each folder in this repository contains a README.md file that serves as comprehensive documentation for the problems under that category. The documentation is organized to help you understand the concepts, syntax, and potential pitfalls related to each problem. Here's a breakdown of what you'll find in the documentation:
+Each folder in this repository includes a README.md file that provides detailed documentation for the problems within that category. The documentation is structured to enhance your understanding of the key concepts, syntax, and common challenges associated with each problem. Below is an overview of the content you'll find:
+
+- Concept Overview: A clear definition of the topic or problem area.
+- Syntax Guide: Detailed syntax for key operations and methods.
+- Examples: Practical examples to illustrate the concepts.
+- Common Issues & Solutions: Troubleshooting for typical problems you might encounter.
+- Patterns & Best Practices: Insights into recurring patterns and how to approach them.
+- Input & Output Specifications: Guidelines on expected inputs and outputs.
+- Methods & Functions: A list of essential methods and their uses.
+- Formulas & Calculations: Relevant formulas and computational details.
+- Key Characteristics: Important attributes and properties of the concepts.
+- Use Cases: Real-world applications and scenarios.
+- Available Operations: Overview of operations you can perform within this topic.
+- Additional Resources: Extra tips, tricks, and insights.
+
+List of available documentation with there current status: 
+
+| Topic | Link | Status |
+|-------|------|--------|
+| Algorithms| [link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Algorithms/README.md)| Created | 
+| Python | [link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/Python/README.md)| Created and Upto Date |
+| SQL | [link](https://github.com/jarvismayur/Hackerrank-Problem-Solutions/blob/main/SQL/README.md) | Created |
 
 
 
