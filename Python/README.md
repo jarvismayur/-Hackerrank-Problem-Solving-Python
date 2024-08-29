@@ -22,6 +22,7 @@
   - [Mutations](#mutations)
   - [Nested Lists](#nested-lists)
   - [No Idea!](#no-idea)
+  - [Polar Coordinates](#polar-coordinates)
   - [Print Function](#print-function)
   - [Python Division](#python-division)
   - [Python If-Else](#python-if-else)
@@ -1258,6 +1259,10 @@ print(count)
     - **Problem**: Inefficient solution for large inputs.
 
         - **Solution**: Use set operations for fast membership tests and efficient counting.
+
+
+## Polar Coordinates
+
 ## Print Function
 **Definition**: The print() function in Python is used to output data to the console. It can handle various types of data, including strings, numbers, and more complex data structures.
 
