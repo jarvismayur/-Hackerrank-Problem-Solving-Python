@@ -345,8 +345,7 @@ print_door_mat(7, 21)
 
 ## Find Angle MBC 
 **Definition**: The "Find Angle MBC" problem requires calculating the angle 
-$\angle$𝑀𝐵𝐶
-∠MBC in a right-angled triangle using trigonometry. This problem helps practice basic trigonometric functions and understanding angles in geometric shapes.
+$\angle$ 𝑀𝐵𝐶  in a right-angled triangle using trigonometry. This problem helps practice basic trigonometric functions and understanding angles in geometric shapes.
 
 - **Problem Statement**
 You are given a right-angled triangle ABC, where M is the midpoint of the hypotenuse AB. You need to find the angle $\angle$ MBC (in degrees) using the lengths of sides AB and BC.
