@@ -8,6 +8,7 @@
   - [Check Subset](#check-subset)
   - [Designer Door Mat](#designer-door-mat)
   - [Find a string](#find-a-string)
+  - [Find Angle MBC](#find-angle-mbc)
   - [Find the Runner-Up Score!](#find-the-runner-up-score)
   - [Finding the percentage](#finding-the-percentage)
   - [Introduction to Sets](#introduction-to-sets)
@@ -341,6 +342,92 @@ print_door_mat(7, 21)
     - **Problem**: The index() method will raise an exception if the substring is not found, which can interrupt the program flow.
 
         - **Solution**: Use try-except blocks to handle potential exceptions when using index().
+
+## Find Angle MBC 
+**Definition**: The "Find Angle MBC" problem requires calculating the angle 
+$\angle$𝑀𝐵𝐶
+∠MBC in a right-angled triangle using trigonometry. This problem helps practice basic trigonometric functions and understanding angles in geometric shapes.
+
+- **Problem Statement**
+You are given a right-angled triangle ABC, where M is the midpoint of the hypotenuse AB. You need to find the angle $\angle$ MBC (in degrees) using the lengths of sides AB and BC.
+
+  - Input:
+```
+  The first line contains the length of side AB.
+  The second line contains the length of side BC.
+  ```
+  - Output:
+```
+  Print the angle $\angle$ MBC in degrees.
+  ```
+    - Note:
+
+        - Use the math.atan2 function to calculate the angle in radians.
+        - Convert the angle to degrees using the math.degrees function.
+- **Example**
+    - Input:
+
+```python
+
+10
+10
+```
+  - Output:
+
+```python
+45°
+```
+
+  - Explanation:
+
+    - Since both sides AB and BC are equal, the triangle ABC is an isosceles right-angled triangle.
+    - The angle $\angle$ MBC will be 45°.
+- **Solution**
+    - Algorithm:
+
+        - Understanding the Triangle:
+
+            - In the right-angled triangle ABC, side BC is adjacent to angle $\angle$ MBC.
+            - Side AB is the hypotenuse.
+            - The angle $\angle$ MBC can be found using trigonometric functions, specifically the arctangent (atan2) function.
+        - Calculate the Angle:
+
+            - Use the atan2(AB, BC) function to get the angle in radians.
+            - Convert this angle from radians to degrees using the degrees function.
+        - Format the Output:
+
+            - Print the angle $\angle$ MBC rounded to the nearest integer followed by the degree symbol (°).
+    - Python Code:
+```python
+
+import math
+
+def find_angle_mbc(ab, bc):
+    # Calculate the angle in radians
+    angle_mbc_rad = math.atan2(ab, bc)
+    # Convert the angle to degrees
+    angle_mbc_deg = math.degrees(angle_mbc_rad)
+    # Print the angle rounded to the nearest integer with the degree symbol
+    print(f"{round(angle_mbc_deg)}°")
+
+# Example usage
+ab = int(input())  # Length of side AB
+bc = int(input())  # Length of side BC
+find_angle_mbc(ab, bc)  # Output the angle MBC
+```
+- **Common Problems**
+    - **Problem**: Confusion between different trigonometric functions.
+        - **Solution**: Use the atan2 function, which correctly handles the division of lengths and returns the angle in radians.
+
+    - **Problem**: Incorrect conversion from radians to degrees.
+        - **Solution**: Use the math.degrees function to accurately convert radians to degrees.
+- **Additional Notes**
+    - Mathematical Insight: The atan2(y, x) function returns the angle θ in radians between the x-axis and the line from the origin to the point (x, y). In this problem, y=AB and x=BC.
+
+    - Edge Cases: Handle cases where sides AB and BC are very close in value, which might lead to rounding issues when converting to degrees.
+    - Use Cases: This problem is useful for practicing trigonometry, specifically the use of arctangent in finding angles within a right-angled triangle.
+
+
 ## Find the Runner-Up Score!
 **Definition**: Finding the runner-up score involves identifying the second highest unique score in a list of scores.
 
