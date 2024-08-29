@@ -6,6 +6,7 @@ Welcome to the **Hackerrank Problems Solutions** repository! This repository con
 
 - [Introduction](#introduction)
 - [Structure](#structure)
+- [Documentation] (#documentation)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
@@ -42,6 +43,14 @@ Hackerrank-Python-Solutions/
 ```
 
 Each folder contains Python files corresponding to the problems under that category on HackerRank. The files are named after the problem for easy identification.
+
+## Documentation
+
+Each folder in this repository contains a README.md file that serves as comprehensive documentation for the problems under that category. The documentation is organized to help you understand the concepts, syntax, and potential pitfalls related to each problem. Here's a breakdown of what you'll find in the documentation:
+
+
+
+
 
 ## Getting Started
 
