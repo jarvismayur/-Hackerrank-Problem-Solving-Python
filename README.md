@@ -6,7 +6,7 @@ Welcome to the **Hackerrank Problems Solutions** repository! This repository con
 
 - [Introduction](#introduction)
 - [Structure](#structure)
-- [Documentation] (#documentation)
+- [Documentation](#documentation)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
