@@ -456,12 +456,12 @@ print(find_runner_up(scores))  # Output: 5
 ```
 - **Steps**:
 
-Input: A list of integers representing scores.
+    - **Input**: A list of integers representing scores.
 Process:
 Convert the list to a set to eliminate duplicates.
 Convert the set to a list and sort it.
 Access the second last element of the sorted list to get the runner-up score.
-Output: The runner-up score.
+    - **Output**: The runner-up score.
 - **Common Problems**:
 
     - **Problem**: The list might not contain enough unique scores to determine a runner-up.
@@ -495,11 +495,11 @@ print(calculate_percentage(part, total))  # Output: 22.5
 ```
 - **Steps**:
 
-Input: Two numbers, part and total, where part is the portion of the total for which the percentage is to be calculated.
+    - **Input**: Two numbers, part and total, where part is the portion of the total for which the percentage is to be calculated.
 Process:
 Divide the part by the total.
 Multiply the result by 100 to get the percentage.
-Output: The percentage value.
+    - **Output**: The percentage value.
 - **Common Problems**:
 
     - **Problem**: Division by zero if the total is zero.
@@ -510,6 +510,76 @@ Output: The percentage value.
         - **Solution**: Ensure that the input values are valid and handle any edge cases as needed.
 
 ## Integers Come In All Sizes
+**Definition** The "Integers Come In All Sizes" problem involves performing arithmetic operations on large integers. Python natively supports arbitrarily large integers, allowing you to perform operations like exponentiation without overflow.
+
+- **Problem Statement**
+You are given four integers, a, b, c, and d. Your task is to perform the following operations:
+
+    - Compute the result of a b (i.e., a raised to the power of b).
+    - Compute the result of c d (i.e., c raised to the power of d).
+    - Calculate the sum of these two results.
+  - **Input**:
+```
+Four space-separated integers a, b, c, and d.
+```
+    - **Output**:
+```
+Print the sum of a b  and c d.
+```
+- **Example**
+    - **Input**:
+
+```python
+
+9 29 7 27
+```
+    - **Output**:
+
+```python
+
+4710194409608608369201743232
+```
+    - **Explanation**:
+
+    - The first result is     9  **  29    =    4710128697246244834921603689.
+    - The second result is 7 ** 27     =6576148539792630716663.
+    - The sum is         4710128697246244834921603689 6576148539792630716663=4710194409608608369201743232.
+- **Solution**
+    - **Algorithm**:
+
+        - Compute the Powers:
+
+            - Calculate a b using the ** operator or pow(a, b) function.
+            - Similarly, calculate c d.
+        - Sum the Results:
+            - Add the two results to get the final answer.
+        - Print the Result:
+            - Print the sum.
+- **Python Code**:
+```python
+
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+# Calculate a^b and c^d
+result = pow(a, b) + pow(c, d)
+
+# Print the result
+print(result)
+```
+**Common Problems**
+    - **Problem**: Overflow issues in other programming languages when handling very large integers.
+        - **Solution**: Python natively handles large integers, so no special libraries are needed for large integer arithmetic.
+    - **Problem**: Misunderstanding how Python handles large integer operations.
+        - **Solution**: Recognize that Python automatically handles large integers without overflow, allowing you to perform operations like a b  even when b is large.
+- **Additional Notes**
+    - Efficiency Insight: Python's ability to handle arbitrarily large integers efficiently allows you to perform operations that might be problematic in other languages without additional libraries.
+
+    - Edge Cases: Consider scenarios where one or both exponents (b or d) are 0, leading to  a   b   or     c    d    being 1 (since any number raised to the power of 0 is 1).
+
+    - Use Cases: This problem is useful for practicing basic arithmetic with large numbers, which can be important in fields like cryptography, number theory, and algorithm design.
 
 ## Introduction to Sets
 **Definition**: A set is an unordered collection of unique elements in Python. Sets are useful for storing distinct items and performing mathematical operations such as union, intersection, and difference.
@@ -1102,6 +1172,86 @@ print(sliced_fruits)  # Output: ['blueberry', 'cherry']
 
 ## Mod Divmod
 
+**Definition** The "Mod Divmod" problem involves using Python’s built-in divmod() function, which returns the quotient and remainder when dividing two numbers. This problem helps practice basic arithmetic operations, especially division and modulus.
+
+- **Problem Statement**
+Given two integers, a and b, perform the following operations:
+
+    - Compute the integer division of a by b.
+    - Compute the modulus of a by b.
+    - Use the divmod() function to get both the quotient and remainder at the same time.
+    - **Input**:
+```
+Two space-separated integers a and b.
+```
+    - **Output**:
+```
+Print the result of integer division.
+Print the result of modulus operation.
+Print the result of the divmod() function as a tuple.
+```
+- **Example**
+    - **Input**:
+
+```python
+
+177 10
+```
+  - **Output**:
+
+```python
+
+17
+7
+(17, 7)
+```
+  - **Explanation**:
+
+    - The integer division of 177 by 10 gives 17.
+    - The modulus of 177 by 10 gives 7.
+    - The divmod(177, 10) function returns the tuple (17, 7) representing both the quotient and the remainder.
+- **Solution**
+    - **Algorithm**:
+
+        - Perform Integer Division:
+
+            - Calculate the quotient using the // operator.
+        - Calculate the Modulus:
+
+          - Calculate the remainder using the % operator.
+        - Use divmod():
+
+            - Apply the divmod(a, b) function to get both the quotient and remainder in one step.
+        - Print the Results:
+
+            - Print the quotient, remainder, and the tuple returned by divmod().
+- **Python Code**:
+```python
+
+a = int(input())
+b = int(input())
+
+# Integer division
+print(a // b)
+
+# Modulus
+print(a % b)
+
+# Using divmod()
+print(divmod(a, b))
+```
+**Common Problems**
+    - **Problem**: Confusing the // operator with /.
+      - **Solution**: Remember that // gives the integer division (quotient) and / gives the floating-point division.
+    - **Problem**: Misunderstanding the output of divmod().
+        - **Solution**: Know that divmod(a, b) returns a tuple where the first element is the quotient and the second is the remainder.
+- **Additional Notes**
+    - Mathematical Insight: The divmod() function is a convenient way to obtain both the quotient and remainder in one step, which can be particularly useful in problems involving divisibility checks.
+
+    - Edge Cases: Consider edge cases like dividing by 1, dividing by a larger number than a, and potential division by zero (although division by zero is generally not allowed).
+
+    - Use Cases: This problem is useful for practicing basic arithmetic operations in Python and understanding the divmod() function, which can simplify code in certain scenarios.
+
 ## Mutations
 **Definition**: Mutation refers to the ability to modify or change the contents of a data structure after it has been created. In Python, some data structures are mutable, meaning their contents can be altered, while others are immutable, meaning their contents cannot be changed once they are created.
 
@@ -1419,6 +1569,80 @@ polar_coordinates(z)
     - Performance: The solution operates in constant time, O(1), since it only involves basic mathematical operations.
 
 ## Power - Mod Power
+**Definition** The "Power - Mod Power" problem involves calculating the power of a number and then optionally applying a modulus to the result. This problem helps practice using Python’s built-in pow() function, which supports both basic exponentiation and modular exponentiation.
+
+- **Problem Statement**
+Given three integers, a, b, and m, perform the following operations:
+
+Compute a b  (i.e., a raised to the power of b).
+Compute 𝑚(a b )mod m using the pow() function's three-argument form.
+  - **Input**:
+```
+Three space-separated integers a, b, and m.
+```
+  - **Output**:
+```
+Print the result of a b .
+Print the result of 𝑚(a b )mod m.
+```
+    -**Constraints**:
+
+        - The integers a, b, and m are all non-negative.
+- **Example**
+    - **Input**:
+
+```python
+
+3 4 5
+```
+- **Output**:
+
+```python
+
+81
+1
+```
+  - **Explanation**:
+
+The first output is 3 4 =81.
+The second output is 81mod  5=1.
+- **Solution**
+    - **Algorithm**:
+
+        - Compute the Power:
+
+            - Calculate the result of a b  using the ** operator or the pow(a, b) function.
+            - Compute the Modular Power:Calculate (a b )mod m using the three-argument form of the pow() function: pow(a, b, m).
+        - Print the Results:
+
+            - Print the result of a b.
+            - Print the result of (a b)mod m.
+- **Python Code**:
+```python
+
+a = int(input())
+b = int(input())
+m = int(input())
+
+# Calculate power
+print(pow(a, b))
+
+# Calculate modular power
+print(pow(a, b, m))
+```
+**Common Problems**
+    - **Problem**: Forgetting that pow(a, b, m) is more efficient than manually calculating a b  and then taking the modulus.
+      - **Solution**: Use pow(a, b, m) for large numbers, as it handles large intermediate results more efficiently.
+    - **Problem**: Misunderstanding the order of operations when calculating (a b )mod m.
+        - **Solution**: Ensure that the modulus operation is correctly applied after the power operation using pow(a, b, m).
+- **Additional Notes**
+    - Efficiency Insight: The pow(a, b, m) function is optimized for large exponentiation with a modulus, avoiding large intermediate results that can cause overflow or slow performance.
+
+    - Edge Cases: Consider cases where b = 0, m = 1, or a = 0, which have well-defined behaviors in Python but might be tricky if not considered.
+
+    - Use Cases: This problem is useful for practicing modular arithmetic, particularly in contexts like cryptography, where modular exponentiation is common.
+
+
 
 ## Print Function
 **Definition**: The print() function in Python is used to output data to the console. It can handle various types of data, including strings, numbers, and more complex data structures.
@@ -2537,13 +2761,13 @@ set.union(*other_sets)
 Given a string, swap the case of each letter. That is, convert all uppercase letters to lowercase and all lowercase letters to uppercase.
 
 - **Example**:
-Input: "Hello World"
+    - **Input**: "Hello World"
 
-Output: "hELLO wORLD"
+    - **Output**: "hELLO wORLD"
 
-Input: "Python Programming"
+    - **Input**: "Python Programming"
 
-Output: "pYTHON pROGRAMMING"
+    - **Output**: "pYTHON pROGRAMMING"
 
 - **Solution**:
 Method: Use the str.swapcase() method, which is a built-in Python method designed to swap the case of all letters in a string.
@@ -2847,13 +3071,13 @@ Performance: Wrapping functions are efficient and typically handle text in linea
 You are given a list of integers where every integer appears exactly twice, except for one integer which appears only once. Your task is to identify that unique integer.
 
 - **Example**:
-Input: [1, 2, 3, 2, 1]
+    - **Input**: [1, 2, 3, 2, 1]
 
-Output: 3
+    - **Output**: 3
 
-Input: [4, 5, 6, 4, 5]
+    - **Input**: [4, 5, 6, 4, 5]
 
-Output: 6
+    - **Output**: 6
 
 - **Solution**:
     - **Method 1: Using Set**:
@@ -2931,7 +3155,7 @@ Stuart scores by counting substrings that start with a consonant.
 Determine the winner based on the scores.
 
 - **Example**:
-Input: "BANANA"
+    - **Input**: "BANANA"
 - **Output**:
 Kevin's Score: 9 (Substrings starting with vowels: A, A, A, AN, ANA, ANAN, ANANA, ANA, ANANA)
 Stuart's Score: 12 (Substrings starting with consonants: B, BAN, BANA, BANAN, BANANA, N, NA, NAN, NANA, AN, ANAN, ANANA)
@@ -2983,7 +3207,146 @@ Performance: The solution provided runs in linear time, O(n), where n is the len
 - **Use Cases**: Useful for understanding substring operations, game scoring algorithms, and performance optimization in competitive programming.
 
 ## Triangle Quest
+**Definition** The "Triangle Quest" problem is a Python exercise that involves printing a specific pattern of numbers using a combination of arithmetic operations and string manipulation. The challenge is to generate a symmetrical triangle-like pattern where each line contains numbers increasing from 1 to n, followed by the reverse sequence.
+
+- **Problem Statement**
+Given an integer N, print a triangle with N-1 rows using only arithmetic operations, loops, and string manipulation. Each row i (for 1 <= i < N) should contain a sequence of digits from 1 to i, followed by the reverse of that sequence without the last digit.
+
+    - **Input**:
+```
+A single integer N where 2 <= N <= 9.
+```
+    - **Output**:
+```
+Print the triangle pattern.
+```
+- **Example**
+    - **Input**:
+
+```python
+
+5
+```
+  - **Output**:
+
+```python
+
+1
+22
+333
+4444
+```
+  - **Explanation**:
+
+        - The first row contains 1.
+        - The second row contains 22.
+        - The third row contains 333.
+        - The fourth row contains 4444.
+- **Solution**
+    - **Algorithm**:
+
+        - Generate the Pattern:
+            - For each i from 1 to N-1, calculate the pattern for that row.
+            - Use arithmetic operations to create the pattern without converting to strings.
+        - Print the Results:
+            -Use the calculated pattern to print each row.
+    - **Python Code**:
+    ```python
+
+    for i in range(1, int(input())):
+        print(i * ((10**i - 1) // 9))
+    ```
+    - **Explanation**:
+
+        - The expression ((10**i - 1) // 9) generates a sequence like 1, 11, 111, etc.
+        - Multiplying this by i gives 1, 22, 333, and so on.
+**Common Problems**
+    - **Problem**: Difficulty understanding the formula.
+      - **Solution**: Break down the formula into parts:
+            - 10**i creates a number like 10, 100, 1000.
+            - Subtracting 1 gives 9, 99, 999.
+            - Dividing by 9 converts this into 1, 11, 111.
+            - Multiplying by i repeats the digit i times.
+    - **Problem**: Confusing the problem with creating actual triangle shapes.
+      - **Solution**: Focus on generating the correct sequence of numbers for each row, not on the visual shape.
+- **Additional Notes**
+    - Efficiency Insight: The formula used is compact and avoids the need for loops or string manipulation, making the solution both efficient and elegant.
+
+    - Edge Cases: Given the constraints (2 <= N <= 9), there's no need to handle large input values or unexpected input types.
+
+    - Use Cases: This problem is a good exercise for understanding arithmetic operations and pattern generation, which can be useful in formatting and algorithm design.
 ## Triangle Quest 2
+
+**Definition** The "Triangle Quest 2" problem involves generating a symmetric pattern of numbers that resembles a pyramid. This problem helps practice using loops, string manipulation, and mathematical operations in Python.
+
+- **Problem Statement**
+You are given a positive integer n. Your task is to print a symmetric pattern of numbers up to n that forms a triangle. Each row of the triangle contains numbers that start from 1, increase up to a certain point, and then decrease symmetrically.
+
+  - **Input**:
+```  
+A single integer n.
+```
+  - **Output**:
+```
+The pattern for all integers from 1 to n−1.
+```
+  - **Constraints**:
+```
+1≤n≤9
+```
+- **Example**
+    - **Input**:
+
+```python
+
+5
+```
+    - **Output**:
+
+```python
+
+1
+121
+12321
+1234321
+```
+- **Explanation**:
+
+    - The first line contains 1.
+    - The second line contains 121 (which is 11**2).
+    - The third line contains 12321 (which is 111**2).
+    - The fourth line contains 1234321 (which is 1111**2).
+    - The pattern stops at n−1=4.
+- **Solution**
+    - **Algorithm**:
+
+      - Understanding the Pattern:
+          - Each row i of the pattern corresponds to the square of a number formed by repeating 1 i times.
+          - For example, 1, 11, 111, and so on.
+        - Generate the Pattern:
+            - Use a loop to iterate through numbers from 1 to n-1.
+            - For each i, generate the number formed by repeating 1 i times and then square it.
+        - Print the Pattern:
+            - Print the result of the squaring operation in each iteration.
+- **Python Code**:
+```python
+
+for i in range(1, int(input())):
+    print((10**i // 9)**2)
+```
+**Common Problems**
+    - **Problem**: Misunderstanding the pattern generation logic.
+      - **Solution**: Recognize that each row's number pattern is created by squaring numbers like 1, 11, 111, etc., which can be generated using the formula (10**i // 9).
+    - **Problem**: Incorrect output formatting.
+      - **Solution**: Ensure the output aligns perfectly with the required pattern by correctly applying the squaring operation.
+- **Additional Notes**
+    - Mathematical Insight: The formula (10**i // 9) generates numbers like 1, 11, 111, etc., which, when squared, produce the desired pattern.
+
+    - Edge Cases: The problem constraints make it relatively straightforward, but ensure your code handles the smallest and largest values of n within the given range.
+
+    - Use Cases: This problem is useful for practicing loops, pattern recognition, and simple arithmetic in Python.
+
+
 
 ## Tuples
 **Definition**: A tuple is an immutable sequence type in Python, used to store a collection of items. Unlike lists, tuples cannot be modified after creation, making them useful for fixed data collections.
