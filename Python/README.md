@@ -47,6 +47,8 @@
   - [Text Wrap](#text-wrap)
   - [The Captain's Room](#the-captains-room)
   - [The Minion Game](#the-minion-game)
+  - [Triangle Quest](#triangle-quest)
+  - [Triangle Quest 2](#triangle-quest-2)
   - [Tuples](#tuples)
   - [What's Your Name](#whats-your-name)
   - [Write a function](#write-a-function)
@@ -2981,6 +2983,7 @@ Performance: The solution provided runs in linear time, O(n), where n is the len
 - **Use Cases**: Useful for understanding substring operations, game scoring algorithms, and performance optimization in competitive programming.
 
 ## Triangle Quest
+## Triangle Quest 2
 
 ## Tuples
 **Definition**: A tuple is an immutable sequence type in Python, used to store a collection of items. Unlike lists, tuples cannot be modified after creation, making them useful for fixed data collections.
