@@ -20,6 +20,7 @@
   - [Lists](#lists)
   - [Loops](#loops)
   - [Merge The Tools](#merge-the-tools)
+  - [Mod Divmod](#mod-divmod)
   - [Mutations](#mutations)
   - [Nested Lists](#nested-lists)
   - [No Idea!](#no-idea)
@@ -1091,6 +1092,8 @@ print(sliced_fruits)  # Output: ['blueberry', 'cherry']
     - **Problem**: Performance issues with large datasets.
 
         - **Solution**: Use efficient data structures and merging techniques to optimize performance.
+
+## Mod Divmod
 
 ## Mutations
 **Definition**: Mutation refers to the ability to modify or change the contents of a data structure after it has been created. In Python, some data structures are mutable, meaning their contents can be altered, while others are immutable, meaning their contents cannot be changed once they are created.
