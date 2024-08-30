@@ -2979,6 +2979,9 @@ Result: Stuart 12 Kevin 9 Stuart
 - **Additional Notes**:
 Performance: The solution provided runs in linear time, O(n), where n is the length of the string. This is optimal for this type of problem.
 - **Use Cases**: Useful for understanding substring operations, game scoring algorithms, and performance optimization in competitive programming.
+
+## Triangle Quest
+
 ## Tuples
 **Definition**: A tuple is an immutable sequence type in Python, used to store a collection of items. Unlike lists, tuples cannot be modified after creation, making them useful for fixed data collections.
 
