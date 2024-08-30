@@ -11,6 +11,7 @@
   - [Find Angle MBC](#find-angle-mbc)
   - [Find the Runner-Up Score!](#find-the-runner-up-score)
   - [Finding the percentage](#finding-the-percentage)
+  - [Integers Come In All Sizes](#integers-come-in-all-sizes)
   - [Introduction to Sets](#introduction-to-sets)
   - [itertools.combinations()](#itertoolscombinations)
   - [itertools.combinations\_with\_replacement()](#itertoolscombinations_with_replacement)
@@ -25,6 +26,7 @@
   - [Nested Lists](#nested-lists)
   - [No Idea!](#no-idea)
   - [Polar Coordinates](#polar-coordinates)
+  - [Power - Mod Power](#power---mod-power)
   - [Print Function](#print-function)
   - [Python Division](#python-division)
   - [Python If-Else](#python-if-else)
@@ -504,6 +506,9 @@ Output: The percentage value.
     - **Problem**: Incorrect results due to improper input values (e.g., negative numbers).
 
         - **Solution**: Ensure that the input values are valid and handle any edge cases as needed.
+
+## Integers Come In All Sizes
+
 ## Introduction to Sets
 **Definition**: A set is an unordered collection of unique elements in Python. Sets are useful for storing distinct items and performing mathematical operations such as union, intersection, and difference.
 
@@ -1411,6 +1416,7 @@ polar_coordinates(z)
     - Libraries: The cmath module in Python provides the necessary functions to work with complex numbers and compute their polar coordinates.
     - Performance: The solution operates in constant time, O(1), since it only involves basic mathematical operations.
 
+## Power - Mod Power
 
 ## Print Function
 **Definition**: The print() function in Python is used to output data to the console. It can handle various types of data, including strings, numbers, and more complex data structures.
